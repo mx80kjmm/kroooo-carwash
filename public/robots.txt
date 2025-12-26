@@ -1,0 +1,10 @@
+# robots.txt for kroooo.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kroooo.com/sitemap.xml
+
+# Crawl-delay (optional, for gentler crawling)
+Crawl-delay: 1

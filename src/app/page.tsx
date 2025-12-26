@@ -182,6 +182,14 @@ export default function Home() {
           <p className="text-white/60">
             © 2025 kroooo.com - 全国コイン洗車場データベース
           </p>
+          <div className="mt-4 space-x-4">
+            <a href="/privacy" className="text-cyan-300 hover:underline text-sm">
+              プライバシーポリシー
+            </a>
+            <a href="/contact" className="text-cyan-300 hover:underline text-sm">
+              お問い合わせ
+            </a>
+          </div>
           <p className="text-white/40 text-sm mt-2">
             情報の掲載・修正のご依頼はお問い合わせください
           </p>
