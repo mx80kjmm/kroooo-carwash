@@ -1,9 +1,10 @@
-
+import { Tweet } from 'react-tweet';
 import { supabase } from '@/lib/supabase';
 import { CarwashLocation } from '@/types/carwash';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import CarWashMap from '@/components/CarWashMapWrapper';
+import ReportButton from '@/components/ReportButton';
 
 interface Props {
     params: Promise<{ id: string }>;
@@ -28,8 +29,32 @@ export default async function LocationDetail({ params }: Props) {
         notFound();
     }
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'AutoWash',
+        name: location.name,
+        address: {
+            '@type': 'PostalAddress',
+            streetAddress: location.address,
+            addressCountry: 'JP'
+        },
+        geo: {
+            '@type': 'GeoCoordinates',
+            latitude: location.latitude,
+            longitude: location.longitude
+        },
+        url: `https://kroooo.com/location/${location.id}`,
+        priceRange: location.price_range || '不明',
+        openingHours: location.business_hours, // Need simple format? schema.org likes "Mo-Fr 09:00-17:00". Our string is free text.
+        // If equipment exists, add 'amenityFeature'?
+    };
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* ヘッダー */}
             <header className="bg-black/20 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 py-6">
@@ -79,6 +104,11 @@ export default async function LocationDetail({ params }: Props) {
                                     <span>{location.price_range}</span>
                                 </p>
                             )}
+                        </div>
+
+
+                        <div className="mt-4 pt-4 border-t border-white/10">
+                            <ReportButton locationId={location.id} locationName={location.name} />
                         </div>
                     </section>
 
@@ -141,6 +171,24 @@ export default async function LocationDetail({ params }: Props) {
                         </section>
                     )}
 
+                    {/* X Post Embed */}
+                    {location.x_post_url && (
+                        <section className="mb-8">
+                            <h2 className="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">
+                                🐦 最新の投稿 (X/Twitter)
+                            </h2>
+                            <div className="flex justify-center bg-white/5 rounded-xl p-4 light-theme">
+                                {(() => {
+                                    const match = location.x_post_url?.match(/status\/(\d+)/);
+                                    if (match) {
+                                        return <Tweet id={match[1]} />;
+                                    }
+                                    return <a href={location.x_post_url} target="_blank" className="text-cyan-300 hover:text-white">Twitterを開く</a>;
+                                })()}
+                            </div>
+                        </section>
+                    )}
+
                     {/* Google Map リンク */}
                     <section>
                         <a
@@ -153,16 +201,16 @@ export default async function LocationDetail({ params }: Props) {
                         </a>
                     </section>
                 </div>
-            </main>
+            </main >
 
             {/* フッター */}
-            <footer className="bg-black/30 backdrop-blur-md border-t border-white/10 py-8 mt-8">
+            < footer className="bg-black/30 backdrop-blur-md border-t border-white/10 py-8 mt-8" >
                 <div className="max-w-7xl mx-auto px-4 text-center">
                     <p className="text-white/60">
                         © 2025 kroooo.com - 全国コイン洗車場データベース
                     </p>
                 </div>
-            </footer>
-        </div>
+            </footer >
+        </div >
     );
 }

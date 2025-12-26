@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { CarwashLocation } from '@/types/carwash';
 import CarWashMap from '@/components/CarWashMapWrapper';
+import AddSpotButton from '@/components/AddSpotButton';
 
 export default function Home() {
   const [locations, setLocations] = useState<CarwashLocation[]>([]);
@@ -12,6 +13,41 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [searchKeyword, setSearchKeyword] = useState('');
   const [filterNonBrush, setFilterNonBrush] = useState(false);
+  const [userLocation, setUserLocation] = useState<{ lat: number, lng: number } | null>(null);
+  const [sortByDistance, setSortByDistance] = useState(false);
+
+  // 2点間の距離を計算 (Haversine formula)
+  const getDistance = (lat1: number, lon1: number, lat2: number, lon2: number) => {
+    const R = 6371; // Radius of the earth in km
+    const dLat = (lat2 - lat1) * (Math.PI / 180);
+    const dLon = (lon2 - lon1) * (Math.PI / 180);
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c; // Distance in km
+  };
+
+  const handleNearMe = () => {
+    if (!navigator.geolocation) {
+      alert('お使いのブラウザは位置情報をサポートしていません');
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setUserLocation({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        });
+        setSortByDistance(true);
+      },
+      () => {
+        alert('位置情報の取得に失敗しました');
+      }
+    );
+  };
+
 
   // データ取得
   const fetchLocations = async () => {
@@ -38,6 +74,16 @@ export default function Home() {
 
       if (error) throw error;
       setLocations(data || []);
+
+      if (sortByDistance && userLocation) {
+        setLocations(prev => {
+          return [...prev].sort((a, b) => {
+            const distA = getDistance(userLocation.lat, userLocation.lng, a.latitude, a.longitude);
+            const distB = getDistance(userLocation.lat, userLocation.lng, b.latitude, b.longitude);
+            return distA - distB;
+          });
+        });
+      }
     } catch (err) {
       console.error('Error fetching locations:', err);
       setError('データの取得に失敗しました');
@@ -48,7 +94,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchLocations();
-  }, [filterNonBrush]);
+  }, [filterNonBrush, sortByDistance, userLocation]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -65,6 +111,9 @@ export default function Home() {
             全国コイン洗車場データベース
           </h1>
           <p className="text-cyan-200 mt-2">kroooo.com - 洗車場を探そう</p>
+          <div className="mt-6 flex justify-center md:justify-start">
+            <AddSpotButton />
+          </div>
         </div>
       </header>
 
@@ -79,6 +128,14 @@ export default function Home() {
               onChange={(e) => setSearchKeyword(e.target.value)}
               className="flex-1 px-6 py-4 rounded-xl bg-white/90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-cyan-400/50 text-lg"
             />
+            <button
+              type="button"
+              onClick={handleNearMe}
+              className={`px-6 py-4 rounded-xl font-bold flex items-center gap-2 transition-all shadow-lg ${sortByDistance ? 'bg-green-500 text-white' : 'bg-white/90 text-gray-700 hover:bg-white'
+                }`}
+            >
+              📍 現在地から近い順
+            </button>
             <button
               type="submit"
               className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl hover:from-cyan-400 hover:to-blue-400 transition-all shadow-lg hover:shadow-cyan-500/30"

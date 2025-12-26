@@ -1,6 +1,6 @@
 // 洗車場の型定義
 export interface CarwashLocation {
-    id: number;
+    id: string;
     name: string;
     address: string;
     latitude: number;
@@ -14,6 +14,8 @@ export interface CarwashLocation {
     has_mat_wash: boolean;       // マット洗い
     price_range?: string;        // 料金帯
     notes?: string;              // 備考
+    url?: string;                // 公式URL
+    x_post_url?: string;         // X(Twitter) URL
     created_at: string;
     updated_at: string;
 }
