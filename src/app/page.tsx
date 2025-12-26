@@ -164,7 +164,7 @@ export default function Home() {
       {/* マップエリア */}
       <section className="max-w-7xl mx-auto px-4 pb-8">
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-white/20">
-          {!loading && locations.length > 0 && <CarWashMap locations={locations} />}
+          {!loading && locations.length > 0 && <CarWashMap locations={locations} center={[35.0116, 135.7681]} zoom={8} />}
         </div>
       </section>
 
