@@ -59,9 +59,18 @@ export default function CarWashMap({ locations, center = [35.6812, 139.7671], zo
                             <p className="text-xs mb-2 text-gray-600">{loc.address}</p>
                             <a
                                 href={`/location/${loc.id}`}
-                                className="text-xs bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700 transition"
+                                style={{
+                                    display: 'inline-block',
+                                    backgroundColor: '#2563eb',
+                                    color: '#ffffff',
+                                    padding: '6px 12px',
+                                    borderRadius: '6px',
+                                    fontSize: '12px',
+                                    fontWeight: 'bold',
+                                    textDecoration: 'none'
+                                }}
                             >
-                                詳細を見る
+                                詳細を見る →
                             </a>
                         </div>
                     </Popup>

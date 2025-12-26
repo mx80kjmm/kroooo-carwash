@@ -3,6 +3,8 @@ import { supabase } from '@/lib/supabase';
 import { CarwashLocation } from '@/types/carwash';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import ReportModal from '@/components/ReportModal';
+import FavoriteButton from '@/components/FavoriteButton';
 import CarWashMap from '@/components/CarWashMapWrapper';
 import ReportButton from '@/components/ReportButton';
 
@@ -67,6 +69,7 @@ export default async function LocationDetail({ params }: Props) {
                     <h1 className="text-3xl font-bold text-white mt-4 flex items-center gap-3">
                         <span className="text-4xl">🚗</span>
                         {location.name}
+                        <FavoriteButton locationId={location.id} className="bg-white/90 shadow text-gray-800" />
                     </h1>
                 </div>
             </header>

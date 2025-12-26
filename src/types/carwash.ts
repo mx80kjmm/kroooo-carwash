@@ -12,6 +12,8 @@ export interface CarwashLocation {
     has_non_brush: boolean;      // ノンブラシ（コーティング車対応）
     has_vacuum: boolean;         // 掃除機
     has_mat_wash: boolean;       // マット洗い
+    is_24h: boolean;             // 24時間営業
+    has_unlimited_water: boolean; // 水道使い放題
     price_range?: string;        // 料金帯
     notes?: string;              // 備考
     url?: string;                // 公式URL

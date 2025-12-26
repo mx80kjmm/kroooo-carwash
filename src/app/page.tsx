@@ -2,10 +2,12 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { supabase } from '@/lib/supabase';
 import { CarwashLocation } from '@/types/carwash';
 import CarWashMap from '@/components/CarWashMapWrapper';
 import AddSpotButton from '@/components/AddSpotButton';
+import FavoriteButton from '@/components/FavoriteButton';
 
 export default function Home() {
   const [locations, setLocations] = useState<CarwashLocation[]>([]);
@@ -13,6 +15,8 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [searchKeyword, setSearchKeyword] = useState('');
   const [filterNonBrush, setFilterNonBrush] = useState(false);
+  const [filter24h, setFilter24h] = useState(false);
+  const [filterUnlimitedWater, setFilterUnlimitedWater] = useState(false);
   const [userLocation, setUserLocation] = useState<{ lat: number, lng: number } | null>(null);
   const [sortByDistance, setSortByDistance] = useState(false);
 
@@ -60,9 +64,15 @@ export default function Home() {
         .select('*')
         .order('created_at', { ascending: false });
 
-      // ノンブラシフィルター
+      // フィルター適用
       if (filterNonBrush) {
         query = query.eq('has_non_brush', true);
+      }
+      if (filter24h) {
+        query = query.eq('is_24h', true);
+      }
+      if (filterUnlimitedWater) {
+        query = query.eq('has_unlimited_water', true);
       }
 
       // キーワード検索
@@ -94,7 +104,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchLocations();
-  }, [filterNonBrush, sortByDistance, userLocation]);
+  }, [filterNonBrush, filter24h, filterUnlimitedWater, sortByDistance, userLocation]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
@@ -103,19 +113,23 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700">
-      {/* ヘッダー */}
-      <header className="bg-black/20 backdrop-blur-md border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-white flex items-center gap-3">
-            <span className="text-4xl">🚗</span>
-            全国コイン洗車場データベース
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 px-4 relative overflow-hidden">
+        <div className="absolute top-4 right-4 z-20">
+          <Link href="/favorites" className="flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-white hover:bg-white/30 transition">
+            ❤️ お気に入り
+          </Link>
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-6 drop-shadow-2xl">
+            Kroooo
           </h1>
           <p className="text-cyan-200 mt-2">kroooo.com - 洗車場を探そう</p>
           <div className="mt-6 flex justify-center md:justify-start">
             <AddSpotButton />
           </div>
         </div>
-      </header>
+      </section>
 
       {/* 検索エリア */}
       <section className="max-w-7xl mx-auto px-4 py-8">
@@ -146,7 +160,7 @@ export default function Home() {
 
           {/* フィルター */}
           <div className="mt-4 flex flex-wrap gap-4">
-            <label className="flex items-center gap-2 text-white cursor-pointer group">
+            <label className="flex items-center gap-2 text-white cursor-pointer group bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">
               <input
                 type="checkbox"
                 checked={filterNonBrush}
@@ -154,7 +168,29 @@ export default function Home() {
                 className="w-5 h-5 rounded accent-cyan-500"
               />
               <span className="group-hover:text-cyan-300 transition-colors">
-                ✨ ノンブラシ（コーティング車対応）のみ
+                ✨ ノンブラシ
+              </span>
+            </label>
+            <label className="flex items-center gap-2 text-white cursor-pointer group bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">
+              <input
+                type="checkbox"
+                checked={filter24h}
+                onChange={(e) => setFilter24h(e.target.checked)}
+                className="w-5 h-5 rounded accent-cyan-500"
+              />
+              <span className="group-hover:text-cyan-300 transition-colors">
+                🌙 24時間営業
+              </span>
+            </label>
+            <label className="flex items-center gap-2 text-white cursor-pointer group bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">
+              <input
+                type="checkbox"
+                checked={filterUnlimitedWater}
+                onChange={(e) => setFilterUnlimitedWater(e.target.checked)}
+                className="w-5 h-5 rounded accent-cyan-500"
+              />
+              <span className="group-hover:text-cyan-300 transition-colors">
+                💧 水道使い放題
               </span>
             </label>
           </div>
@@ -192,38 +228,42 @@ export default function Home() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {locations.map((location) => (
-                <a
+                <div
                   key={location.id}
-                  href={`/location/${location.id}`}
-                  className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all hover:scale-[1.02] hover:shadow-2xl group cursor-pointer block"
+                  className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all hover:scale-[1.02] hover:shadow-2xl group relative"
                 >
-                  <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
-                    {location.name}
-                  </h3>
-                  <p className="text-white/70 mt-2 flex items-start gap-2">
-                    <span>📍</span>
-                    <span>{location.address}</span>
-                  </p>
+                  <Link href={`/location/${location.id}`} className="absolute inset-0 z-0"></Link>
 
-                  {/* 設備タグ */}
-                  <div className="flex flex-wrap gap-2 mt-4">
+                  <div className="flex justify-between items-start mb-2 relative z-10 pointer-events-none">
+                    <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors pointer-events-auto">
+                      {location.name}
+                    </h3>
+                    <div className="pointer-events-auto">
+                      <FavoriteButton locationId={location.id} className="bg-white shadow-sm" />
+                    </div>
+                  </div>
+
+                  <p className="text-cyan-50 mb-4 text-sm flex items-center gap-2 pointer-events-none">
+                    <span>📍</span> {location.address}
+                  </p>
+                  <div className="flex flex-wrap gap-2 pointer-events-none">
                     {location.has_non_brush && (
-                      <span className="px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-400 text-black text-sm font-bold rounded-full">
+                      <span className="px-3 py-1 bg-yellow-400/20 text-yellow-300 border border-yellow-400/30 rounded-full text-xs font-bold">
                         ✨ ノンブラシ
                       </span>
                     )}
                     {location.has_self_wash && (
-                      <span className="px-3 py-1 bg-cyan-500/30 text-cyan-200 text-sm rounded-full border border-cyan-400/30">
-                        セルフ
+                      <span className="px-3 py-1 bg-indigo-500/30 text-indigo-300 border border-indigo-400/30 rounded-full text-xs">
+                        💦 セルフ
                       </span>
                     )}
                     {location.has_auto_wash && (
-                      <span className="px-3 py-1 bg-blue-500/30 text-blue-200 text-sm rounded-full border border-blue-400/30">
-                        自動
+                      <span className="px-3 py-1 bg-purple-500/30 text-purple-300 border border-purple-400/30 rounded-full text-xs">
+                        🤖 全自動
                       </span>
                     )}
                     {location.has_vacuum && (
-                      <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-sm rounded-full border border-purple-400/30">
+                      <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-xs rounded-full border border-purple-400/30">
                         掃除機
                       </span>
                     )}
@@ -235,7 +275,7 @@ export default function Home() {
                       <span>{location.business_hours}</span>
                     </p>
                   )}
-                </a>
+                </div>
               ))}
             </div>
           </>

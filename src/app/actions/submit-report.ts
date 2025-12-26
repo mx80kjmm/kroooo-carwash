@@ -1,7 +1,7 @@
-
 'use server'
 
 import { supabase } from '@/lib/supabase';
+import { sendLineNotify } from '@/lib/notifications';
 
 interface SubmitState {
     success: boolean;
@@ -40,20 +40,34 @@ export async function submitReportAction(prevState: SubmitState, formData: FormD
             }
         }
 
-        const { error } = await supabase.from('location_reports').insert({
+        const { data, error } = await supabase.from('location_reports').insert({
             location_id: locationId || null,
             type,
             comment,
             status: 'pending',
             proposed_data: imageUrl ? { image_url: imageUrl } : null
-        });
+        }).select().single(); // Added .select().single() to get the inserted data
 
         if (error) {
-            console.error('Supabase Error:', error);
-            return { success: false, message: '送信中にエラーが発生しました。時間を置いて再度お試しください。' };
+            console.error('Error submitting report:', error);
+            return { success: false, message: '送信に失敗しました。再度お試しください。' };
         }
 
-        return { success: true, message: '報告を受け付けました。ご協力ありがとうございます！' };
+        // LINE通知
+        const notifyMessage = `
+🆕 新規レポート受信
+種別: ${type === 'new_location' ? '新規登録' : type === 'correction' ? '情報修正' : '閉店報告'}
+ID: ${data?.id ?? '不明'}
+LocationID: ${locationId ?? '新規'}
+コメント: ${comment}
+${imageUrl ? `画像: ${imageUrl}` : ''}
+        `.trim();
+
+        // Don't await specifically? Or await to ensure it fires? 
+        // Vercel Server Actions terminate after return. Better to await.
+        await sendLineNotify(notifyMessage);
+
+        return { success: true, message: '報告を受け付けました！ありがとうございます。' };
     } catch (err) {
         console.error('Unexpected Error:', err);
         return { success: false, message: '予期せぬエラーが発生しました。' };

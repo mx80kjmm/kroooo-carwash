@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
 import StructuredData from "./components/StructuredData";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://kroooo.com'),
   title: "コイン洗車場検索 kroooo.com",
   description: "近くのコイン洗車場をカンタン検索。ノーブラシ洗車機や高圧洗浄機の有無で絞り込み可能。",
   keywords: ["洗車場", "コイン洗車", "ノンブラシ洗車", "セルフ洗車", "洗車機", "kroooo"],
@@ -71,6 +73,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Footer />
       </body>
       <GoogleAnalytics gaId="G-TEP74YDNS4" />
     </html>
