@@ -1,7 +1,9 @@
+
 import { supabase } from '@/lib/supabase';
 import { CarwashLocation } from '@/types/carwash';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import CarWashMap from '@/components/CarWashMapWrapper';
 
 interface Props {
     params: Promise<{ id: string }>;
@@ -77,6 +79,16 @@ export default async function LocationDetail({ params }: Props) {
                                     <span>{location.price_range}</span>
                                 </p>
                             )}
+                        </div>
+                    </section>
+
+                    {/* 地図 */}
+                    <section className="mb-8">
+                        <h2 className="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">
+                            🗺️ アクセス
+                        </h2>
+                        <div className="bg-white rounded-xl overflow-hidden border-2 border-white/20 h-[400px]">
+                            <CarWashMap locations={[location]} height="400px" />
                         </div>
                     </section>
 

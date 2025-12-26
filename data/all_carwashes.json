@@ -7,8 +7,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.8713831,
+    "longitude": 139.6016507,
     "notes": ""
   },
   {
@@ -19,8 +19,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.7851923,
+    "longitude": 139.7581984,
     "notes": ""
   },
   {
@@ -31,32 +31,32 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.5760152,
+    "longitude": 139.6377599,
     "notes": ""
   },
   {
     "name": "カーピカランド 中丸",
-    "address": "神奈川県相模原市（詳細要確認）",
+    "address": "神奈川県相模原市南区下溝236",
     "url": "",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.5354943,
+    "longitude": 139.3752809,
     "notes": ""
   },
   {
     "name": "カーピカランド問屋町店",
-    "address": "栃木県宇都宮市問屋町（詳細要確認）",
+    "address": "栃木県宇都宮市石井町3431-27",
     "url": "",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.5363525,
+    "longitude": 139.9216664,
     "notes": ""
   },
   {
@@ -67,8 +67,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.134739,
+    "longitude": 136.8627473,
     "notes": ""
   },
   {
@@ -79,80 +79,80 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.2322284,
+    "longitude": 136.9190127,
     "notes": ""
   },
   {
     "name": "カーピカランド レインボー 多加木店",
-    "address": "愛知県一宮市多加木（詳細要確認）",
+    "address": "愛知県一宮市多加木2-11-3",
     "url": "https://www.so-gen.com",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.276259,
+    "longitude": 136.812573,
     "notes": ""
   },
   {
     "name": "カーピカランド レインボー 岩倉店",
-    "address": "愛知県岩倉市（詳細要確認）",
+    "address": "愛知県岩倉市稲荷町高畑54",
     "url": "https://www.so-gen.com",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.268923,
+    "longitude": 136.8699074,
     "notes": ""
   },
   {
     "name": "カーピカランド レインボー 猿海道店",
-    "address": "愛知県一宮市猿海道（詳細要確認）",
+    "address": "愛知県一宮市猿海道1-2-1",
     "url": "https://www.so-gen.com",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.28643539999999,
+    "longitude": 136.8162214,
     "notes": ""
   },
   {
     "name": "カーピカランド レインボー 開明店",
-    "address": "愛知県一宮市開明（詳細要確認）",
+    "address": "愛知県一宮市開明郷東28-1",
     "url": "https://www.so-gen.com",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.3162515,
+    "longitude": 136.7719954,
     "notes": ""
   },
   {
     "name": "カーピカランド レインボー 今伊勢店",
-    "address": "愛知県一宮市今伊勢町（詳細要確認）",
+    "address": "愛知県一宮市今伊勢町本神戸中町21",
     "url": "https://www.so-gen.com",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.3141447,
+    "longitude": 136.7970777,
     "notes": ""
   },
   {
     "name": "カーピカランド レインボー 高蔵寺店",
-    "address": "愛知県春日井市高蔵寺（詳細要確認）",
+    "address": "愛知県春日井市中央台1-1-5",
     "url": "https://www.so-gen.com",
     "x_post_url": "",
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.2778213,
+    "longitude": 137.0490694,
     "notes": ""
   },
   {
@@ -163,8 +163,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.3593013,
+    "longitude": 136.6134417,
     "notes": ""
   },
   {
@@ -175,8 +175,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.4043954,
+    "longitude": 135.3820815,
     "notes": ""
   },
   {
@@ -187,8 +187,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.8471745,
+    "longitude": 135.5836657,
     "notes": ""
   },
   {
@@ -199,8 +199,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6485574,
+    "longitude": 135.5515653,
     "notes": ""
   },
   {
@@ -211,8 +211,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5160256,
+    "longitude": 135.4267126,
     "notes": ""
   },
   {
@@ -223,8 +223,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.34592010000001,
+    "longitude": 135.2865339,
     "notes": ""
   },
   {
@@ -235,8 +235,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5207035,
+    "longitude": 135.4424491,
     "notes": ""
   },
   {
@@ -247,8 +247,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.4001776,
+    "longitude": 135.3125873,
     "notes": ""
   },
   {
@@ -259,8 +259,8 @@
     "equipment": {
       "car_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.54124669999999,
+    "longitude": 135.6989837,
     "notes": ""
   },
   {
@@ -273,8 +273,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 37.1461227,
+    "longitude": 138.2251376,
     "x_post_url": ""
   },
   {
@@ -287,8 +287,8 @@
     "price_estimated": "不明",
     "url": "https://hayama-superwash.net/",
     "notes": "門型洗車機でノンブラシモード選択可能。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 37.9185345,
+    "longitude": 139.069444,
     "x_post_url": ""
   },
   {
@@ -302,8 +302,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "高圧スプレー4台。ノンブラシ手洗いに適した広々空間。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.5809243,
+    "longitude": 138.1275073,
     "x_post_url": ""
   },
   {
@@ -316,8 +316,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車機設置。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.5179896,
+    "longitude": 137.8222039,
     "x_post_url": ""
   },
   {
@@ -330,8 +330,8 @@
     "price_estimated": "700円〜",
     "url": "",
     "notes": "甲府市でノンブラシ洗車機設置の代表店。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.6501017,
+    "longitude": 138.6013084,
     "x_post_url": ""
   },
   {
@@ -344,8 +344,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "山梨県初、純水洗車機導入店。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.6082676,
+    "longitude": 138.4648353,
     "x_post_url": ""
   },
   {
@@ -360,8 +360,8 @@
     "price_estimated": "不明",
     "url": "https://makkuru.jp/",
     "notes": "2種類のノンブラシ洗車機あり。屋根付き拭き上げ場。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.5775351,
+    "longitude": 136.6207131,
     "x_post_url": ""
   },
   {
@@ -375,8 +375,8 @@
     "price_estimated": "不明",
     "url": "https://makkuru.jp/",
     "notes": "強力なノンブラシ洗車機設置。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.5392849,
+    "longitude": 136.6512934,
     "x_post_url": ""
   },
   {
@@ -389,8 +389,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノーブラシ門型自動洗車機2台のみの専門店。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.5219426,
+    "longitude": 136.6126468,
     "x_post_url": ""
   },
   {
@@ -404,8 +404,8 @@
     "price_estimated": "不明",
     "url": "https://dh-parking.co.jp/",
     "notes": "2025年オープン予定（または済）。純水洗車場、屋根付きブース。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.6655449,
+    "longitude": 137.2020321,
     "x_post_url": ""
   },
   {
@@ -418,8 +418,8 @@
     "price_estimated": "600円〜",
     "url": "",
     "notes": "中国地方初のノーブラシ門型洗車機導入店。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.4134524,
+    "longitude": 132.3896133,
     "x_post_url": ""
   },
   {
@@ -433,8 +433,8 @@
     "price_estimated": "不明",
     "url": "https://chikko-tenant-store.com/",
     "notes": "純水手洗い洗車（屋内）。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6216168,
+    "longitude": 133.9082387,
     "x_post_url": ""
   },
   {
@@ -448,8 +448,8 @@
     "price_estimated": "200円〜",
     "url": "",
     "notes": "管理が行き届いた綺麗な洗車場。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5494205,
+    "longitude": 133.7374496,
     "x_post_url": ""
   },
   {
@@ -462,8 +462,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "門型洗車機にノンブラシコースあり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.4681908,
+    "longitude": 133.0484055,
     "x_post_url": ""
   },
   {
@@ -476,8 +476,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "門型洗車機にノンブラシコースあり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.3077562,
+    "longitude": 132.9006125,
     "x_post_url": ""
   },
   {
@@ -491,8 +491,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "最新門型洗車機あり（要機能確認）。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 33.9638862,
+    "longitude": 132.1016377,
     "x_post_url": ""
   },
   {
@@ -505,8 +505,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "比較的新しい洗車場。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.5015038,
+    "longitude": 134.1898206,
     "x_post_url": ""
   },
   {
@@ -522,8 +522,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.546656,
+    "longitude": 139.4385568
   },
   {
     "name": "D-Wash 武蔵村山",
@@ -538,12 +538,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.7437397,
+    "longitude": 139.3752304
   },
   {
     "name": "D-Wash 中環南茨木",
-    "address": "大阪府茨木市（詳細要確認）",
+    "address": "大阪府茨木市沢良宜西2-6-15",
     "url": "https://dh-parking.co.jp/",
     "x_post_url": "",
     "notes": "純水洗車",
@@ -554,8 +554,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.7972831,
+    "longitude": 135.5662592
   },
   {
     "name": "D-Wash 六角橋",
@@ -570,8 +570,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.4877665,
+    "longitude": 139.6184342
   },
   {
     "name": "D-Wash コジマ×ビックカメラ熊谷店",
@@ -586,8 +586,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.1471963,
+    "longitude": 139.3889796
   },
   {
     "name": "D-Wash 富山黒瀬",
@@ -602,8 +602,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.6662109,
+    "longitude": 137.2017425
   },
   {
     "name": "Ai Wash Park ウェーブ洗車場",
@@ -617,8 +617,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "超ハイテクノンブラシ洗車機あり。24時間営業。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 43.1322358,
+    "longitude": 141.2417533,
     "x_post_url": ""
   },
   {
@@ -631,8 +631,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "スプレー4台、温水あり。手洗いノンブラシ派に。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 43.0617713,
+    "longitude": 141.3544506,
     "x_post_url": ""
   },
   {
@@ -645,8 +645,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 43.1902372,
+    "longitude": 140.994172,
     "x_post_url": ""
   },
   {
@@ -659,8 +659,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 42.82128669999999,
+    "longitude": 141.6510125,
     "x_post_url": ""
   },
   {
@@ -674,8 +674,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "屋内洗車場、ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 40.8077778,
+    "longitude": 140.7938821,
     "x_post_url": ""
   },
   {
@@ -688,8 +688,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ自動洗車機あり。コインランドリー併設。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 39.7019558,
+    "longitude": 141.1543303,
     "x_post_url": ""
   },
   {
@@ -702,8 +702,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "水圧のみのノンブラシ洗車。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 38.2996062,
+    "longitude": 140.9453658,
     "x_post_url": ""
   },
   {
@@ -716,8 +716,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "東北初ノンブラシ洗車機「嵐」2台設置。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 38.3353815,
+    "longitude": 140.8397417,
     "x_post_url": ""
   },
   {
@@ -730,8 +730,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "水圧ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 37.9223201,
+    "longitude": 140.1167445,
     "x_post_url": ""
   },
   {
@@ -744,8 +744,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車、モコモコ泡洗車あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 37.7878422,
+    "longitude": 140.4655907,
     "x_post_url": ""
   },
   {
@@ -758,8 +758,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 37.40047759999999,
+    "longitude": 140.3596822,
     "x_post_url": ""
   },
   {
@@ -774,8 +774,8 @@
     "price_estimated": "1,000円〜 (ノーブラシ)",
     "url": "https://java-style.com/shop/okuradani/",
     "notes": "ノーブラシ洗車機2台。スタッフ駐在なし。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6456542,
+    "longitude": 135.0101977,
     "x_post_url": ""
   },
   {
@@ -790,8 +790,8 @@
     "price_estimated": "1,000円〜 (ノーブラシ)",
     "url": "https://java-style.com/shop/amagasaki/",
     "notes": "ノーブラシ洗車機2台、スプレー2台。温水蛇口あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7436492,
+    "longitude": 135.4358311,
     "x_post_url": ""
   },
   {
@@ -805,8 +805,8 @@
     "price_estimated": "1,000円〜 (ノーブラシ)",
     "url": "https://java-style.com/shop/itami/",
     "notes": "ノーブラシ洗車機3台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.8065266,
+    "longitude": 135.3834055,
     "x_post_url": ""
   },
   {
@@ -820,8 +820,8 @@
     "price_estimated": "1,000円〜",
     "url": "https://java-style.com/shop/kobenishi/",
     "notes": "広い敷地に門型4台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6617553,
+    "longitude": 134.9889036,
     "x_post_url": ""
   },
   {
@@ -835,8 +835,8 @@
     "price_estimated": "1,000円〜",
     "url": "https://java-style.com/shop/kobetamatsu/",
     "notes": "ノーブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6997144,
+    "longitude": 134.982658,
     "x_post_url": ""
   },
   {
@@ -851,8 +851,8 @@
     "price_estimated": "3,980円 (2時間・個室)",
     "url": "https://tearaisennsya.net/",
     "notes": "完全個室予約制。純水器、フォームガン使い放題。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.652163,
+    "longitude": 135.1385149,
     "x_post_url": ""
   },
   {
@@ -867,8 +867,8 @@
     "price_estimated": "3,980円 (2時間・個室)",
     "url": "https://tearaisennsya.net/",
     "notes": "完全個室予約制。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7188566,
+    "longitude": 135.2837881,
     "x_post_url": ""
   },
   {
@@ -883,13 +883,13 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノーブラシ洗車機あり。西宮北口近く。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7424955,
+    "longitude": 135.3529994,
     "x_post_url": ""
   },
   {
     "name": "Whitepit 尼崎玉江橋店",
-    "address": "兵庫県尼崎市東難波町5-31",
+    "address": "兵庫県尼崎市東難波町5-31-8",
     "hours": "24時間",
     "equipment": {
       "high_pressure_washer": true,
@@ -898,8 +898,8 @@
     "price_estimated": "30分 800円〜",
     "url": "https://whitepit.jp/",
     "notes": "時間制セルフ洗車場。高圧洗浄機、純水器など設備充実。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7212017,
+    "longitude": 135.4183729,
     "x_post_url": ""
   },
   {
@@ -913,8 +913,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "関西最大級、広大な敷地。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.703359,
+    "longitude": 134.9828473,
     "x_post_url": ""
   },
   {
@@ -925,8 +925,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.60549,
+    "longitude": 135.5517253,
     "notes": ""
   },
   {
@@ -937,8 +937,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6334308,
+    "longitude": 135.4954394,
     "notes": ""
   },
   {
@@ -949,8 +949,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6940641,
+    "longitude": 135.5287075,
     "notes": ""
   },
   {
@@ -961,8 +961,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5247023,
+    "longitude": 135.4619648,
     "notes": ""
   },
   {
@@ -973,8 +973,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7464515,
+    "longitude": 135.6308316,
     "notes": ""
   },
   {
@@ -985,8 +985,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6077973,
+    "longitude": 135.4580068,
     "notes": ""
   },
   {
@@ -997,8 +997,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6707853,
+    "longitude": 135.6347663,
     "notes": ""
   },
   {
@@ -1009,8 +1009,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6458988,
+    "longitude": 135.5901147,
     "notes": ""
   },
   {
@@ -1021,8 +1021,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6714399,
+    "longitude": 135.5791304,
     "notes": ""
   },
   {
@@ -1033,8 +1033,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.8086176,
+    "longitude": 135.5525091,
     "notes": ""
   },
   {
@@ -1045,8 +1045,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.8298728,
+    "longitude": 135.6872857,
     "notes": ""
   },
   {
@@ -1057,8 +1057,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5718014,
+    "longitude": 135.6058034,
     "notes": ""
   },
   {
@@ -1069,8 +1069,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.537155,
+    "longitude": 135.6091812,
     "notes": ""
   },
   {
@@ -1081,8 +1081,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6127629,
+    "longitude": 135.6100661,
     "notes": ""
   },
   {
@@ -1093,8 +1093,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.9657468,
+    "longitude": 135.7293304,
     "notes": ""
   },
   {
@@ -1105,8 +1105,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.9540542,
+    "longitude": 135.7515062,
     "notes": ""
   },
   {
@@ -1117,8 +1117,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6691483,
+    "longitude": 135.0194125,
     "notes": ""
   },
   {
@@ -1129,8 +1129,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.8129412,
+    "longitude": 134.6683378,
     "notes": ""
   },
   {
@@ -1141,8 +1141,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.8055486,
+    "longitude": 134.7282346,
     "notes": ""
   },
   {
@@ -1153,8 +1153,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7983173,
+    "longitude": 134.6224674,
     "notes": ""
   },
   {
@@ -1165,8 +1165,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.8528733,
+    "longitude": 140.0200487,
     "notes": ""
   },
   {
@@ -1177,8 +1177,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.386582,
+    "longitude": 139.9375469,
     "notes": ""
   },
   {
@@ -1189,8 +1189,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.7164114,
+    "longitude": 139.4643102,
     "notes": ""
   },
   {
@@ -1201,8 +1201,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.6907431,
+    "longitude": 139.3372109,
     "notes": ""
   },
   {
@@ -1213,8 +1213,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.6255181,
+    "longitude": 139.3925723,
     "notes": ""
   },
   {
@@ -1225,8 +1225,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.4888902,
+    "longitude": 139.3470263,
     "notes": ""
   },
   {
@@ -1237,8 +1237,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.3790999,
+    "longitude": 139.553313,
     "notes": ""
   },
   {
@@ -1249,8 +1249,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 36.3379738,
+    "longitude": 139.0513449,
     "notes": ""
   },
   {
@@ -1261,8 +1261,8 @@
     "equipment": {
       "non_brush_washing_machine": true
     },
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.3470281,
+    "longitude": 134.0723786,
     "notes": ""
   },
   {
@@ -1277,8 +1277,8 @@
     "price_estimated": "1,000円〜 (ノーブラシ)",
     "url": "https://java-style.com/shop/kyotominami/",
     "notes": "全自動ノーブラシ洗車機3台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.9474403,
+    "longitude": 135.7467681,
     "x_post_url": ""
   },
   {
@@ -1293,8 +1293,8 @@
     "price_estimated": "1,000円〜 (ノーブラシ)",
     "url": "https://java-style.com/shop/kyotokisshoin/",
     "notes": "全自動ノーブラシ洗車機3台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.9648851,
+    "longitude": 135.707128,
     "x_post_url": ""
   },
   {
@@ -1307,8 +1307,8 @@
     "price_estimated": "800円〜",
     "url": "",
     "notes": "2023年オープン。福知山初のノンブラシ洗車機。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.2934612,
+    "longitude": 135.1459453,
     "x_post_url": ""
   },
   {
@@ -1322,8 +1322,8 @@
     "price_estimated": "不明",
     "url": "https://wash-kireine.jp/",
     "notes": "滋賀県初のノンブラシ洗車機。コインランドリー併設。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 35.0686081,
+    "longitude": 136.0189718,
     "x_post_url": ""
   },
   {
@@ -1336,8 +1336,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車専門店。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5337316,
+    "longitude": 135.7452875,
     "x_post_url": ""
   },
   {
@@ -1351,8 +1351,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "高圧ジェットによるノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.2702421,
+    "longitude": 135.3097635,
     "x_post_url": ""
   },
   {
@@ -1365,8 +1365,8 @@
     "price_estimated": "30分 800円〜",
     "url": "https://whitepit.jp/",
     "notes": "時間制セルフ洗車場。高圧洗浄機、純水器完備。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.1790189,
+    "longitude": 135.186025,
     "x_post_url": ""
   },
   {
@@ -1380,8 +1380,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "手洗い洗車スペースあり、24時間営業。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 31.5437072,
+    "longitude": 130.5356032,
     "x_post_url": ""
   },
   {
@@ -1394,8 +1394,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "ノンブラシ洗車機の設置が確認されています。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 31.601975,
+    "longitude": 131.3787684,
     "x_post_url": ""
   },
   {
@@ -1408,8 +1408,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "セルフ手洗い洗車機（コイン式）、高圧スプレーあり。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 26.2228349,
+    "longitude": 127.7588392,
     "x_post_url": ""
   },
   {
@@ -1422,8 +1422,8 @@
     "price_estimated": "不明",
     "url": "https://hanataka-ryukyu.com/",
     "notes": "2025年6月より純水セルフ洗車開始予定。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 26.2228349,
+    "longitude": 127.7588392,
     "x_post_url": ""
   },
   {
@@ -1437,8 +1437,8 @@
     "price_estimated": "不明",
     "url": "https://inasa.okinawa/",
     "notes": "セルフ手洗いおよびドライブスルー洗車。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 26.3464604,
+    "longitude": 127.826686,
     "x_post_url": ""
   },
   {
@@ -1454,8 +1454,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.7102752,
+    "longitude": 137.7274159
   },
   {
     "name": "洗車クラブ 第一洗車場",
@@ -1470,8 +1470,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.5673305,
+    "longitude": 139.6150466
   },
   {
     "name": "洗車クラブ 第二洗車場",
@@ -1486,8 +1486,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.568531,
+    "longitude": 139.6120411
   },
   {
     "name": "ALAUDAY 東大阪店",
@@ -1502,8 +1502,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.6792862,
+    "longitude": 135.600851
   },
   {
     "name": "CarWash Shinomiya CafeGarden (カーウォッシュ シノミヤ カフェガーデン)",
@@ -1516,8 +1516,8 @@
     "price_estimated": "不明",
     "url": "http://www.shibatakosan.co.jp/",
     "notes": "ノーブラシ洗車機3台。カフェ併設。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7303058,
+    "longitude": 135.6129776,
     "x_post_url": ""
   },
   {
@@ -1531,8 +1531,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "24時間営業。洗車機2台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.7387545,
+    "longitude": 135.5023618,
     "x_post_url": ""
   },
   {
@@ -1547,8 +1547,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "門型2台、屋根付きスプレー1台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6822204,
+    "longitude": 135.4375985,
     "x_post_url": ""
   },
   {
@@ -1562,8 +1562,8 @@
     "price_estimated": "100円〜",
     "url": "",
     "notes": "24時間営業。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.5240644,
+    "longitude": 135.4984589,
     "x_post_url": ""
   },
   {
@@ -1577,8 +1577,8 @@
     "price_estimated": "不明",
     "url": "",
     "notes": "門型2台、スプレー3台。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.60549,
+    "longitude": 135.5517253,
     "x_post_url": ""
   },
   {
@@ -1591,16 +1591,16 @@
     "price_estimated": "400円〜",
     "url": "",
     "notes": "手洗いスプレー洗車専門。",
-    "latitude": null,
-    "longitude": null,
+    "latitude": 34.6147045,
+    "longitude": 135.5484143,
     "x_post_url": ""
   },
   {
     "name": "環七大杉コイン洗車場＆ランドリー",
     "address": "東京都江戸川区大杉4丁目7-21",
     "opening_hours": "24時間 (要確認)",
-    "latitude": 35.7028,
-    "longitude": 139.8805,
+    "latitude": 35.7108792,
+    "longitude": 139.8798362,
     "has_non_brush_washing_machine": true,
     "has_high_pressure_washer": true,
     "has_vacuum": true,
@@ -1623,8 +1623,8 @@
     "name": "ドルフィンパーク",
     "address": "東京都世田谷区北烏山5丁目23-19",
     "opening_hours": "07:00-21:00",
-    "latitude": 35.6708,
-    "longitude": 139.596,
+    "latitude": 35.6825912,
+    "longitude": 139.5864966,
     "has_non_brush_washing_machine": true,
     "has_high_pressure_washer": true,
     "has_vacuum": true,
@@ -1647,8 +1647,8 @@
     "name": "カーウォッシュ大井",
     "address": "東京都品川区勝島1-8",
     "opening_hours": "09:00-21:00 (季節・競馬開催日変動あり)",
-    "latitude": 35.5947,
-    "longitude": 139.7423,
+    "latitude": 35.5962539,
+    "longitude": 139.7429292,
     "has_non_brush_washing_machine": true,
     "has_high_pressure_washer": true,
     "has_vacuum": true,
@@ -1671,8 +1671,8 @@
     "name": "ワニの洗車場",
     "address": "東京都板橋区赤塚新町2-27-8",
     "opening_hours": "08:00-21:00",
-    "latitude": 35.7725,
-    "longitude": 139.6384,
+    "latitude": 35.7725727,
+    "longitude": 139.6385143,
     "has_non_brush_washing_machine": true,
     "has_high_pressure_washer": true,
     "has_vacuum": true,
@@ -1695,8 +1695,8 @@
     "name": "オートクリーンプラザ奥戸",
     "address": "東京都葛飾区奥戸8-26-7",
     "opening_hours": "24時間",
-    "latitude": 35.7336,
-    "longitude": 139.8659,
+    "latitude": 35.7391661,
+    "longitude": 139.8641659,
     "has_non_brush_washing_machine": false,
     "has_high_pressure_washer": true,
     "has_vacuum": true,
@@ -1719,8 +1719,8 @@
     "name": "カーウォッシュ行船",
     "address": "東京都江戸川区北葛西2-10-26",
     "opening_hours": "24時間 (機械利用 05:00-24:00)",
-    "latitude": 35.6706,
-    "longitude": 139.8624,
+    "latitude": 35.6717014,
+    "longitude": 139.8568824,
     "has_non_brush_washing_machine": false,
     "has_high_pressure_washer": true,
     "has_vacuum": true,
@@ -1750,8 +1750,8 @@
     "url": "https://java-style.com/",
     "x_post_url": "",
     "notes": "24時間営業。ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.35254990000001,
+    "longitude": 134.0651235
   },
   {
     "name": "ヤマウチセルフ多肥",
@@ -1764,8 +1764,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "2025年6月よりノーブラシ洗車導入。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.2895699,
+    "longitude": 134.0556095
   },
   {
     "name": "Whitepit 松山余戸西店",
@@ -1779,8 +1779,8 @@
     "url": "https://whitepit.jp/",
     "x_post_url": "https://twitter.com/FujitakaCorp",
     "notes": "2025年オープンの時間制セルフ洗車場。設備充実。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 33.8154602,
+    "longitude": 132.723494
   },
   {
     "name": "高知屋内洗車場 ウォッシングガレージ",
@@ -1794,8 +1794,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "屋内・冷暖房・純水完備の予約制ガレージ。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 33.5588821,
+    "longitude": 133.5312383
   },
   {
     "name": "松岡自動車 コイン洗車場",
@@ -1809,8 +1809,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "ボディドライヤーあり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.0703652,
+    "longitude": 134.5549537
   },
   {
     "name": "セルフ洗車場 あらいぐーま",
@@ -1823,8 +1823,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "超高圧ジェットシステム搭載機あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.0703652,
+    "longitude": 134.5549537
   },
   {
     "name": "ドルフィンパーク洗車場",
@@ -1840,8 +1840,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "ノンブラシ洗車機完備。拭き上げスペース10台分。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.6760662,
+    "longitude": 139.5870529
   },
   {
     "name": "ワニの洗車場",
@@ -1855,8 +1855,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "ノンブラシ洗車機あり。高級車に人気。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.7882421,
+    "longitude": 139.6858132
   },
   {
     "name": "シャワーメイト花小金井",
@@ -1869,8 +1869,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "水圧のみのノンブラシ洗車。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.7284467,
+    "longitude": 139.5022719
   },
   {
     "name": "洗車のジャバ 厚木三田店",
@@ -1883,8 +1883,8 @@
     "url": "https://java-style.com/shop/atsugisanda/",
     "x_post_url": "",
     "notes": "全自動ノーブラシ洗車機。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.4954662,
+    "longitude": 139.3435367
   },
   {
     "name": "東戸塚カーウォッシュセンター",
@@ -1898,8 +1898,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "ノンブラシ洗車機1台あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.4349137,
+    "longitude": 139.5356365
   },
   {
     "name": "トミーロール",
@@ -1912,8 +1912,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "水圧洗車（ノンブラシ）。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.737593,
+    "longitude": 140.3209062
   },
   {
     "name": "P's GARAGE（ピースガレージ）",
@@ -1927,8 +1927,8 @@
     "url": "https://ppp-garage.com/",
     "x_post_url": "",
     "notes": "2024年OPEN。屋内・冷暖房・純水完備のレンタルブース。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.7876663,
+    "longitude": 139.9033248
   },
   {
     "name": "洗車のジャバ 木更津朝日店",
@@ -1941,8 +1941,8 @@
     "url": "https://java-style.com/shop/kisarazuasahi/",
     "x_post_url": "",
     "notes": "ノーブラシ洗車機1台。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.3838507,
+    "longitude": 139.9345953
   },
   {
     "name": "アイウォッシュパーク西堀",
@@ -1955,8 +1955,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "ノンブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.7731385,
+    "longitude": 139.5378642
   },
   {
     "name": "埼玉スポーツセンター 洗車場",
@@ -1969,8 +1969,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "24時間営業。ノンブラシ機あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.8237288,
+    "longitude": 139.5314644
   },
   {
     "name": "コイン洗車場きのめ",
@@ -1983,8 +1983,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "ノンブラシ洗車機あり。水道無料。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.8956944,
+    "longitude": 139.516546
   },
   {
     "name": "SPLASH 'N' GO! 前橋50号店",
@@ -1995,8 +1995,8 @@
       "car_washing_machine": true
     },
     "notes": "トンネル型連続洗車機",
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.3894669,
+    "longitude": 139.0634134
   },
   {
     "name": "SPLASH 'N' GO! 伊勢崎韮塚店",
@@ -2011,8 +2011,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.3063067,
+    "longitude": 139.1739828
   },
   {
     "name": "SPLASH 'N' GO! 高崎棟高店",
@@ -2027,8 +2027,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.3885399,
+    "longitude": 139.0034626
   },
   {
     "name": "SPLASH 'N' GO! 足利緑町店",
@@ -2043,8 +2043,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.3340952,
+    "longitude": 139.4351628
   },
   {
     "name": "SPLASH 'N' GO! 新前橋店",
@@ -2059,8 +2059,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.3894669,
+    "longitude": 139.0634134
   },
   {
     "name": "SPLASH 'N' GO! 太田新田店",
@@ -2075,8 +2075,8 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 36.2909373,
+    "longitude": 139.3760432
   },
   {
     "name": "WASH GARAGE 南区内田橋店",
@@ -2091,12 +2091,12 @@
     "url": "",
     "x_post_url": "",
     "notes": "2024年12月オープン。完全予約制ガレージ、純水器完備、手ぶら洗車可能。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.1144674,
+    "longitude": 136.908295
   },
   {
     "name": "名古屋城プライベートセルフ洗車場（名城公園北）",
-    "address": "愛知県名古屋市北区（詳細住所要予約）",
+    "address": "愛知県名古屋市北区金城2-5-3",
     "hours": "予約制",
     "equipment": {
       "high_pressure_washer": true,
@@ -2106,12 +2106,12 @@
     "url": "https://coubic.com/private-car-wash",
     "x_post_url": "",
     "notes": "予約制ガレージ型セルフ洗車場。純水器完備。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.1968521,
+    "longitude": 136.9011985
   },
   {
     "name": "洗神（アラジン）洗車場",
-    "address": "愛知県額田郡幸田町（詳細住所要確認）",
+    "address": "愛知県額田郡幸田町坂崎祐金7-5",
     "hours": "不明",
     "equipment": {
       "non_brush_washing_machine": true
@@ -2120,8 +2120,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "2024年2月オープン。ノーブラシ門型洗車機あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.8912826,
+    "longitude": 137.1732311
   },
   {
     "name": "JAVA 藤枝築地店",
@@ -2135,12 +2135,12 @@
     "url": "https://java-style.com/shop/fujiedatsukiji/",
     "x_post_url": "",
     "notes": "ノーブラシ洗車機あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.858079,
+    "longitude": 138.2671946
   },
   {
     "name": "超純水洗車アライグマ",
-    "address": "静岡県富士市（詳細住所要確認）",
+    "address": "静岡県富士市柚木169-1",
     "hours": "不明",
     "equipment": {
       "non_brush_washing_machine": true
@@ -2149,8 +2149,8 @@
     "url": "https://araiguma-carwash.com/",
     "x_post_url": "",
     "notes": "ゲート式超純水ノンブラシ洗車機。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.1594178,
+    "longitude": 138.6401409
   },
   {
     "name": "シャワーBOY 渡瀬店",
@@ -2163,8 +2163,8 @@
     "url": "",
     "x_post_url": "",
     "notes": "泡ムース手洗いコース（手洗い時間8分付き）あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.705645,
+    "longitude": 137.7600575
   },
   {
     "name": "Kireine野洲店（参考：滋賀県ですが東海圏からもアクセス可）",
@@ -2177,12 +2177,12 @@
     "url": "https://wash-kireine.jp/",
     "x_post_url": "",
     "notes": "東海エリアからも比較的近い本格ノンブラシ洗車場。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.0686081,
+    "longitude": 136.0189718
   },
   {
     "name": "のんびりパーク",
-    "address": "岐阜県郡上市八幡町（詳細住所要確認）",
+    "address": "岐阜県郡上市八幡町初納1430-2",
     "hours": "不明",
     "equipment": {
       "high_pressure_washer": true
@@ -2191,12 +2191,12 @@
     "url": "https://nonbiripark.com/",
     "x_post_url": "",
     "notes": "100%純水使用の高圧スプレー洗車。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.7874197,
+    "longitude": 137.0086239
   },
   {
     "name": "ピカピカラボ",
-    "address": "三重県伊勢市（詳細住所要確認）",
+    "address": "三重県伊勢市小俣町湯田1516-1",
     "hours": "不明",
     "equipment": {
       "car_washing_machine": true
@@ -2205,12 +2205,12 @@
     "url": "https://max-pro.jp/",
     "x_post_url": "",
     "notes": "超純水洗車機（ノンブラシかは要確認だが高機能）。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.5085796,
+    "longitude": 136.6463275
   },
   {
     "name": "Whitepit 南区東海通店",
-    "address": "愛知県名古屋市南区（詳細住所要確認）",
+    "address": "愛知県名古屋市南区戸部下1-2-1",
     "hours": "時間制",
     "equipment": {
       "high_pressure_washer": true
@@ -2219,12 +2219,12 @@
     "url": "https://jikansei-sensya.jp/",
     "x_post_url": "https://twitter.com/FujitakaCorp",
     "notes": "時間制セルフ洗車。冬は温水あり。",
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.10755,
+    "longitude": 136.9190601
   },
   {
     "name": "Whitepit 和歌山大浦店",
-    "address": "和歌山県和歌山市大浦街道（詳細要確認）",
+    "address": "和歌山県和歌山市湊御殿2-3-6",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2235,12 +2235,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.2195954,
+    "longitude": 135.1558831
   },
   {
     "name": "Whitepit 紀三井寺店",
-    "address": "和歌山県和歌山市紀三井寺（詳細要確認）",
+    "address": "和歌山県和歌山市紀三井寺539-7",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2251,12 +2251,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.1790189,
+    "longitude": 135.186025
   },
   {
     "name": "Whitepit 松原セブンパーク天美前店",
-    "address": "大阪府松原市（詳細要確認）",
+    "address": "大阪府松原市天美東2-208",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2267,12 +2267,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.5898363,
+    "longitude": 135.5429863
   },
   {
     "name": "Whitepit 府中中須店",
-    "address": "広島県府中市中須町（詳細要確認）",
+    "address": "広島県府中市中須町81-3",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2283,12 +2283,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.5545172,
+    "longitude": 133.2670183
   },
   {
     "name": "Whitepit 三谷店",
-    "address": "香川県高松市三谷町（詳細要確認）",
+    "address": "愛知県蒲郡市三谷北通1-90",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2299,12 +2299,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.8182155,
+    "longitude": 137.2514261
   },
   {
     "name": "Whitepit 尼崎玉江橋店",
-    "address": "兵庫県尼崎市東難波町（詳細要確認）",
+    "address": "兵庫県尼崎市東難波町5-31-8",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2315,12 +2315,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.7212017,
+    "longitude": 135.4183729
   },
   {
     "name": "Whitepit 高松鶴市店",
-    "address": "香川県高松市鶴市町（詳細要確認）",
+    "address": "香川県高松市鶴市町62-1",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2331,12 +2331,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.325155,
+    "longitude": 134.0037088
   },
   {
     "name": "Whitepit 京都伏見本店",
-    "address": "京都府京都市伏見区（詳細要確認）",
+    "address": "京都府京都市伏見区南寝小屋町14",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2347,12 +2347,12 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 34.9381598,
+    "longitude": 135.750921
   },
   {
     "name": "Whitepit 南区東海通店",
-    "address": "愛知県名古屋市南区（詳細要確認）",
+    "address": "愛知県名古屋市南区戸部下1-2-1",
     "url": "https://whitepit.jp/",
     "x_post_url": "",
     "notes": "時間制セルフ洗車",
@@ -2363,7 +2363,707 @@
       "mat_cleaner": false,
       "roofed_spray_area": false
     },
-    "latitude": null,
-    "longitude": null
+    "latitude": 35.10755,
+    "longitude": 136.9190601
+  },
+  {
+    "name": "コイン洗車場 (山田南)",
+    "address": "大阪府吹田市山田南38",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "ユーザー指摘による追加 (無名)",
+    "latitude": 34.7904254,
+    "longitude": 135.5357362
+  },
+  {
+    "name": "カーピカランド南吹田",
+    "address": "大阪府吹田市南吹田1-20",
+    "hours": "5:00 - 22:00",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "ユーザー指摘による追加",
+    "latitude": 34.7496369,
+    "longitude": 135.5103165
+  },
+  {
+    "name": "洗車CLUB岸里",
+    "address": "大阪府大阪市西成区岸里2-13-1",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.6326039,
+    "longitude": 135.4948503
+  },
+  {
+    "name": "カーピカランド豊里",
+    "address": "大阪府大阪市東淀川区大道南1-3",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.7398739,
+    "longitude": 135.5495201
+  },
+  {
+    "name": "ウオッシュザウルス豊里",
+    "address": "大阪府大阪市東淀川区大道南1-5",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.7407147,
+    "longitude": 135.5489304
+  },
+  {
+    "name": "ウオッシュザウルス新大阪",
+    "address": "大阪府大阪市東淀川区宮原2-1",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.7387545,
+    "longitude": 135.5023618
+  },
+  {
+    "name": "カーピカランド木川",
+    "address": "大阪府大阪市淀川区木川西4-2-8",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.7268606,
+    "longitude": 135.4871559
+  },
+  {
+    "name": "JAVA住之江",
+    "address": "大阪府大阪市住之江区平林南2-4-31",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.6081345,
+    "longitude": 135.4583352
+  },
+  {
+    "name": "Newカーピカランド住之江",
+    "address": "大阪府大阪市住之江区新北島3-3-19",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.6079091,
+    "longitude": 135.4667746
+  },
+  {
+    "name": "カーピカランドきづがわ",
+    "address": "大阪府大阪市浪速区木津川1-7-4",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.6648456,
+    "longitude": 135.4823955
+  },
+  {
+    "name": "カーウォッシュ21堺出島",
+    "address": "大阪府堺市堺区出島海岸通3-5",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.5677937,
+    "longitude": 135.4570165
+  },
+  {
+    "name": "洗車の王国 なかもず店",
+    "address": "大阪府堺市北区金岡町1377-6",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.5535124,
+    "longitude": 135.5132362
+  },
+  {
+    "name": "SELWASHU藤美",
+    "address": "大阪府東大阪市金岡4-15-28",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.6330314,
+    "longitude": 135.5888453
+  },
+  {
+    "name": "カーピカランド藤阪",
+    "address": "大阪府枚方市藤阪東町4-7",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.8168945,
+    "longitude": 135.7101377
+  },
+  {
+    "name": "カーピカランド緑地北",
+    "address": "大阪府豊中市旭丘10",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (大阪編)",
+    "latitude": 34.7814176,
+    "longitude": 135.4801254
+  },
+  {
+    "name": "カーシャインプラザ 北千住",
+    "address": "〒120-0024 東京都足立区千住関屋町",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.7413624,
+    "longitude": 139.8054747
+  },
+  {
+    "name": "アクアランド 足立花畑店",
+    "address": "〒121-0061 東京都足立区花畑",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.8047937,
+    "longitude": 139.816345
+  },
+  {
+    "name": "ウォッシュクリーン大泉",
+    "address": "〒178-0062 東京都練馬区大泉町",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.7643751,
+    "longitude": 139.6018654
+  },
+  {
+    "name": "クリーンプラザ 本町田",
+    "address": "〒194-0032 東京都町田市本町田",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.564839,
+    "longitude": 139.4444992
+  },
+  {
+    "name": "カーピカランド桔梗",
+    "address": "東京都調布市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.6506111,
+    "longitude": 139.5407215
+  },
+  {
+    "name": "WASH!PLAZA",
+    "address": "〒236-0002 神奈川県横浜市金沢区鳥浜町",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.3853477,
+    "longitude": 139.6439339
+  },
+  {
+    "name": "じゃんぼ洗車センター横浜阿久和店",
+    "address": "神奈川県横浜市瀬谷区 阿久和",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.4474067,
+    "longitude": 139.5043489
+  },
+  {
+    "name": "カーピカランド長沢",
+    "address": "〒239-0842 神奈川県横須賀市長沢",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.2114175,
+    "longitude": 139.678376
+  },
+  {
+    "name": "カーピカランドたまプラーザ",
+    "address": "神奈川県横浜市青葉区",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.5501407,
+    "longitude": 139.5154425
+  },
+  {
+    "name": "アイウォッシュパーク大島",
+    "address": "〒252-0135 神奈川県相模原市緑区大島",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.5737437,
+    "longitude": 139.3177632
+  },
+  {
+    "name": "アイウォッシュパーク湘南台",
+    "address": "〒252-0804 神奈川県藤沢市湘南台",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.399044,
+    "longitude": 139.4694825
+  },
+  {
+    "name": "カーウォッシュプラザ ブライトン",
+    "address": "〒242-0029 神奈川県大和市上草柳",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.4780511,
+    "longitude": 139.4491425
+  },
+  {
+    "name": "コインプラザフレッシュ",
+    "address": "神奈川県茅ヶ崎市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.3338221,
+    "longitude": 139.4036897
+  },
+  {
+    "name": "ビッグトップ武里店",
+    "address": "〒339-0012 埼玉県さいたま市岩槻区増長",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.9474639,
+    "longitude": 139.7409333
+  },
+  {
+    "name": "旭油業コイン洗車場",
+    "address": "〒336-0963 埼玉県さいたま市緑区大門",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.883843,
+    "longitude": 139.7307153
+  },
+  {
+    "name": "カーピカランド中央",
+    "address": "埼玉県加須市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 36.1313882,
+    "longitude": 139.6017706
+  },
+  {
+    "name": "クリーンプラザ堀兼 BIGTOP",
+    "address": "埼玉県狭山市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.8528389,
+    "longitude": 139.412183
+  },
+  {
+    "name": "ウォッシュアイランド みつわ台店",
+    "address": "〒264-0032 千葉県千葉市若葉区みつわ台",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.6410771,
+    "longitude": 140.1356589
+  },
+  {
+    "name": "ウォッシュアイランド 名戸ヶ谷店",
+    "address": "〒277-0032 千葉県柏市名戸ケ谷",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.8444319,
+    "longitude": 139.981561
+  },
+  {
+    "name": "ハマちゃん",
+    "address": "千葉県船橋市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.6945485,
+    "longitude": 139.9827277
+  },
+  {
+    "name": "洗車CLUB 鷺沼台",
+    "address": "〒275-0015 千葉県習志野市鷺沼台",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.6819749,
+    "longitude": 140.0354506
+  },
+  {
+    "name": "カーピカランド岩戸",
+    "address": "〒270-1616 千葉県印西市岩戸",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.7678069,
+    "longitude": 140.1678121
+  },
+  {
+    "name": "洗車ランド晴丘",
+    "address": "愛知県尾張旭市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.2145832,
+    "longitude": 137.0382573
+  },
+  {
+    "name": "クリーンランド虹",
+    "address": "愛知県名古屋市緑区",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.0817593,
+    "longitude": 136.9600742
+  },
+  {
+    "name": "りんくうコイン洗車場",
+    "address": "愛知県常滑市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 34.88664139999999,
+    "longitude": 136.8323482
+  },
+  {
+    "name": "カーランドリートップ",
+    "address": "愛知県豊川市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 34.8267523,
+    "longitude": 137.3757774
+  },
+  {
+    "name": "カーピカランド米津",
+    "address": "愛知県西尾市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 34.8619053,
+    "longitude": 137.0618775
+  },
+  {
+    "name": "きらり洗車村",
+    "address": "愛知県名古屋市名東区",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.1752621,
+    "longitude": 137.0029684
+  },
+  {
+    "name": "カーピカランド ドンコ",
+    "address": "愛知県名古屋市港区",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.093996,
+    "longitude": 136.8470409
+  },
+  {
+    "name": "カーピカランド ピットイン",
+    "address": "愛知県安城市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 34.9586216,
+    "longitude": 137.0803649
+  },
+  {
+    "name": "シャワーBOY渡瀬",
+    "address": "〒435-0036 静岡県浜松市中央区渡瀬町",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 34.705645,
+    "longitude": 137.7600575
+  },
+  {
+    "name": "カーシャンランドアーク",
+    "address": "静岡県静岡市清水区",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.1132336,
+    "longitude": 138.4987208
+  },
+  {
+    "name": "カーウォッシュSUN",
+    "address": "静岡県御殿場市",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.3087683,
+    "longitude": 138.9347872
+  },
+  {
+    "name": "コイン洗車城北",
+    "address": "〒420-0805 静岡県静岡市葵区城北",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.002696,
+    "longitude": 138.3950758
+  },
+  {
+    "name": "セルフ24 長泉なめり店",
+    "address": "〒411-0933 静岡県駿東郡長泉町納米里",
+    "hours": "不明",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "x_post_url": "",
+    "notes": "全国リサーチ追加 (首都圏・東海編)",
+    "latitude": 35.1461748,
+    "longitude": 138.8963598
   }
 ]

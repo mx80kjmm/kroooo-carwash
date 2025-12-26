@@ -1,8 +1,10 @@
+
 'use client';
 
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 import { CarwashLocation } from '@/types/carwash';
+import CarWashMap from '@/components/CarWashMapWrapper';
 
 export default function Home() {
   const [locations, setLocations] = useState<CarwashLocation[]>([]);
@@ -99,6 +101,13 @@ export default function Home() {
               </span>
             </label>
           </div>
+        </div>
+      </section>
+
+      {/* マップエリア */}
+      <section className="max-w-7xl mx-auto px-4 pb-8">
+        <div className="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-white/20">
+          {!loading && locations.length > 0 && <CarWashMap locations={locations} />}
         </div>
       </section>
 
