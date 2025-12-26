@@ -1,0 +1,85 @@
+[
+    {
+        "name": "洗車のジャバ 京都南インター店",
+        "address": "京都府京都市伏見区中島中道町114",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "1,000円〜 (ノーブラシ)",
+        "url": "https://java-style.com/shop/kyotominami/",
+        "notes": "全自動ノーブラシ洗車機3台。"
+    },
+    {
+        "name": "洗車のジャバ 京都吉祥院店",
+        "address": "京都府京都市南区久世高田町257",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "1,000円〜 (ノーブラシ)",
+        "url": "https://java-style.com/shop/kyotokisshoin/",
+        "notes": "全自動ノーブラシ洗車機3台。"
+    },
+    {
+        "name": "SAP Car Wash 福知山",
+        "address": "京都府福知山市土師宮町2丁目96",
+        "hours": "6:00 - 22:00",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "800円〜",
+        "url": "",
+        "notes": "2023年オープン。福知山初のノンブラシ洗車機。"
+    },
+    {
+        "name": "Kireine野洲店",
+        "address": "滋賀県野洲市市三宅2456",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "不明",
+        "url": "https://wash-kireine.jp/",
+        "notes": "滋賀県初のノンブラシ洗車機。コインランドリー併設。"
+    },
+    {
+        "name": "ノンブラシ洗車 ZERO STYLE 奈良広陵店",
+        "address": "奈良県北葛城郡広陵町大字安部450-1",
+        "hours": "7:00 - 22:00",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車専門店。"
+    },
+    {
+        "name": "コイン洗車場 夢洗遊シャワシャワ",
+        "address": "和歌山県岩出市森118-1",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "高圧ジェットによるノンブラシ洗車機あり。"
+    },
+    {
+        "name": "Whitepit 紀三井寺店",
+        "address": "和歌山県和歌山市紀三井寺539-7",
+        "hours": "24時間",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "30分 800円〜",
+        "url": "https://whitepit.jp/",
+        "notes": "時間制セルフ洗車場。高圧洗浄機、純水器完備。"
+    }
+]

@@ -1,0 +1,153 @@
+[
+    {
+        "name": "ドルフィンパーク洗車場",
+        "address": "東京都世田谷区北烏山8-17-7",
+        "hours": "7:00 - 21:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "500円〜",
+        "url": "",
+        "x_post_url": "",
+        "notes": "ノンブラシ洗車機完備。拭き上げスペース10台分。"
+    },
+    {
+        "name": "ワニの洗車場",
+        "address": "東京都板橋区東坂下2-21-4",
+        "hours": "8:00 - 21:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "ノンブラシ洗車機あり。高級車に人気。"
+    },
+    {
+        "name": "カーウォッシュ大井",
+        "address": "東京都品川区勝島1-8",
+        "hours": "9:00 - 21:00 (変動あり)",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "http://tokyops.co.jp/",
+        "x_post_url": "",
+        "notes": "全自動ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "シャワーメイト花小金井",
+        "address": "東京都小平市花小金井7-11",
+        "hours": "6:00 - 21:00",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "水圧のみのノンブラシ洗車。"
+    },
+    {
+        "name": "洗車のジャバ 厚木三田店",
+        "address": "神奈川県厚木市三田3165",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "1,000円〜",
+        "url": "https://java-style.com/shop/atsugisanda/",
+        "x_post_url": "",
+        "notes": "全自動ノーブラシ洗車機。"
+    },
+    {
+        "name": "東戸塚カーウォッシュセンター",
+        "address": "神奈川県横浜市戸塚区名瀬町97",
+        "hours": "6:30 - 21:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "600円〜",
+        "url": "",
+        "x_post_url": "",
+        "notes": "ノンブラシ洗車機1台あり。"
+    },
+    {
+        "name": "トミーロール",
+        "address": "千葉県富里市七栄696",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "700円〜",
+        "url": "",
+        "x_post_url": "",
+        "notes": "水圧洗車（ノンブラシ）。"
+    },
+    {
+        "name": "P's GARAGE（ピースガレージ）",
+        "address": "千葉県松戸市（詳細要確認）",
+        "hours": "完全予約制",
+        "equipment": {
+            "high_pressure_washer": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "要確認",
+        "url": "https://ppp-garage.com/",
+        "x_post_url": "",
+        "notes": "2024年OPEN。屋内・冷暖房・純水完備のレンタルブース。"
+    },
+    {
+        "name": "洗車のジャバ 木更津朝日店",
+        "address": "千葉県木更津市朝日3-1-31",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "1,000円〜",
+        "url": "https://java-style.com/shop/kisarazuasahi/",
+        "x_post_url": "",
+        "notes": "ノーブラシ洗車機1台。"
+    },
+    {
+        "name": "アイウォッシュパーク西堀",
+        "address": "埼玉県新座市西堀2-10",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "埼玉スポーツセンター 洗車場",
+        "address": "埼玉県所沢市南永井1116",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "24時間営業。ノンブラシ機あり。"
+    },
+    {
+        "name": "コイン洗車場きのめ",
+        "address": "埼玉県川越市木野目（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "ノンブラシ洗車機あり。水道無料。"
+    }
+]

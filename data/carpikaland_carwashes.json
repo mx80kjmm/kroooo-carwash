@@ -1,0 +1,200 @@
+[
+    {
+        "name": "カーピカランド大久保",
+        "address": "埼玉県さいたま市桜区大久保領家626-2",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド鹿浜",
+        "address": "東京都足立区鹿浜6-11-8",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド中原",
+        "address": "神奈川県川崎市中原区下小田中4-14-3",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド 中丸",
+        "address": "神奈川県相模原市（詳細要確認）",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド問屋町店",
+        "address": "栃木県宇都宮市問屋町（詳細要確認）",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 名古屋なかがわ店",
+        "address": "愛知県名古屋市中川区小城町1-90",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド楠",
+        "address": "愛知県名古屋市北区若鶴町342",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 多加木店",
+        "address": "愛知県一宮市多加木（詳細要確認）",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 岩倉店",
+        "address": "愛知県岩倉市（詳細要確認）",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 猿海道店",
+        "address": "愛知県一宮市猿海道（詳細要確認）",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 開明店",
+        "address": "愛知県一宮市開明（詳細要確認）",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 今伊勢店",
+        "address": "愛知県一宮市今伊勢町（詳細要確認）",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド レインボー 高蔵寺店",
+        "address": "愛知県春日井市高蔵寺（詳細要確認）",
+        "url": "https://www.so-gen.com",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランドぱる",
+        "address": "岐阜県大垣市（詳細要確認）",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド南の丘",
+        "address": "大阪府貝塚市三ツ松1592",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド高槻土室",
+        "address": "大阪府高槻市土室町40",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド巽",
+        "address": "大阪府大阪市生野区巽中2-14-1",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド綾園",
+        "address": "大阪府高石市綾園7-2",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド泉南IC",
+        "address": "大阪府泉南市信達金熊寺110",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド高石",
+        "address": "大阪府高石市取下町6-16-23",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランド中町",
+        "address": "大阪府泉佐野市中町4-2-6665-1",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    },
+    {
+        "name": "カーピカランドクリーン香芝",
+        "address": "奈良県香芝市（詳細要確認）",
+        "url": "",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        }
+    }
+]

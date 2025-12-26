@@ -1,0 +1,82 @@
+[
+    {
+        "name": "サクセス洗車場 広島1号店",
+        "address": "広島県広島市佐伯区石内南4丁目3-5",
+        "hours": "5:30 - 21:30",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "600円〜",
+        "url": "",
+        "notes": "中国地方初のノーブラシ門型洗車機導入店。"
+    },
+    {
+        "name": "CHIKKO TENANTO STORE",
+        "address": "岡山県岡山市南区（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "high_pressure_washer": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "不明",
+        "url": "https://chikko-tenant-store.com/",
+        "notes": "純水手洗い洗車（屋内）。"
+    },
+    {
+        "name": "コイン洗車場HAKU",
+        "address": "岡山県倉敷市連島2-9",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "200円〜",
+        "url": "",
+        "notes": "管理が行き届いた綺麗な洗車場。"
+    },
+    {
+        "name": "キグナスセルフユーエス松江",
+        "address": "島根県松江市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "門型洗車機にノンブラシコースあり。"
+    },
+    {
+        "name": "キグナスセルフ雲南",
+        "address": "島根県雲南市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "門型洗車機にノンブラシコースあり。"
+    },
+    {
+        "name": "コイン洗車場セルコ",
+        "address": "山口県柳井市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "最新門型洗車機あり（要機能確認）。"
+    },
+    {
+        "name": "三菱商事エネルギー セルフ里仁（WASH PARK）",
+        "address": "鳥取県鳥取市里仁（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "比較的新しい洗車場。"
+    }
+]

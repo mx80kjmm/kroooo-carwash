@@ -1,0 +1,47 @@
+[
+    {
+        "name": "SPLASH 'N' GO! 前橋50号店",
+        "address": "群馬県前橋市（詳細要確認）",
+        "url": "https://splashbrothers.co.jp/",
+        "x_post_url": "",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "notes": "トンネル型連続洗車機"
+    },
+    {
+        "name": "SPLASH 'N' GO! 伊勢崎韮塚店",
+        "address": "群馬県伊勢崎市韮塚町（詳細要確認）",
+        "url": "https://splashbrothers.co.jp/",
+        "x_post_url": "",
+        "notes": "トンネル型連続洗車機"
+    },
+    {
+        "name": "SPLASH 'N' GO! 高崎棟高店",
+        "address": "群馬県高崎市棟高町（詳細要確認）",
+        "url": "https://splashbrothers.co.jp/",
+        "x_post_url": "",
+        "notes": "トンネル型連続洗車機"
+    },
+    {
+        "name": "SPLASH 'N' GO! 足利緑町店",
+        "address": "栃木県足利市緑町（詳細要確認）",
+        "url": "https://splashbrothers.co.jp/",
+        "x_post_url": "",
+        "notes": "トンネル型連続洗車機"
+    },
+    {
+        "name": "SPLASH 'N' GO! 新前橋店",
+        "address": "群馬県前橋市（詳細要確認）",
+        "url": "https://splashbrothers.co.jp/",
+        "x_post_url": "",
+        "notes": "トンネル型連続洗車機"
+    },
+    {
+        "name": "SPLASH 'N' GO! 太田新田店",
+        "address": "群馬県太田市（詳細要確認）",
+        "url": "https://splashbrothers.co.jp/",
+        "x_post_url": "",
+        "notes": "トンネル型連続洗車機"
+    }
+]

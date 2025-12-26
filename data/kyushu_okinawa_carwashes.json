@@ -1,0 +1,59 @@
+[
+    {
+        "name": "ENEOS 産業道路宇宿SS",
+        "address": "鹿児島県鹿児島市宇宿（詳細要確認）",
+        "hours": "24時間",
+        "equipment": {
+            "car_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "手洗い洗車スペースあり、24時間営業。"
+    },
+    {
+        "name": "KKR ドライブスルー洗車場",
+        "address": "宮崎県日南市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車機の設置が確認されています。"
+    },
+    {
+        "name": "ENEOS 西原センターSS",
+        "address": "沖縄県中頭郡西原町（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "セルフ手洗い洗車機（コイン式）、高圧スプレーあり。"
+    },
+    {
+        "name": "ハナタカ",
+        "address": "沖縄県中頭郡西原町（詳細要確認）",
+        "hours": "要確認",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "https://hanataka-ryukyu.com/",
+        "notes": "2025年6月より純水セルフ洗車開始予定。"
+    },
+    {
+        "name": "洗車スペースINASA",
+        "address": "沖縄県沖縄市美里仲原町（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "https://inasa.okinawa/",
+        "notes": "セルフ手洗いおよびドライブスルー洗車。"
+    }
+]

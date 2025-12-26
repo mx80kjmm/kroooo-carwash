@@ -1,0 +1,126 @@
+[
+    {
+        "name": "Ai Wash Park ウェーブ洗車場",
+        "address": "北海道札幌市手稲区（詳細要確認）",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "超ハイテクノンブラシ洗車機あり。24時間営業。"
+    },
+    {
+        "name": "CAR WASH 24時間 コイン洗車",
+        "address": "北海道札幌市東区（詳細要確認）",
+        "hours": "24時間",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "スプレー4台、温水あり。手洗いノンブラシ派に。"
+    },
+    {
+        "name": "クリーンアップ洗車場",
+        "address": "北海道小樽市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "洗車倶楽部 ぴっかりDO",
+        "address": "北海道千歳市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "JOYWASH PARK 青森浜館",
+        "address": "青森県青森市浜館（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "屋内洗車場、ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "スタジアム洗車場",
+        "address": "岩手県盛岡市（詳細要確認）",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ自動洗車機あり。コインランドリー併設。"
+    },
+    {
+        "name": "洗車スペース・サード岩切",
+        "address": "宮城県仙台市宮城野区岩切（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "水圧のみのノンブラシ洗車。"
+    },
+    {
+        "name": "eSPA仙台泉",
+        "address": "宮城県仙台市泉区（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "東北初ノンブラシ洗車機「嵐」2台設置。"
+    },
+    {
+        "name": "シャワーランド カタコ",
+        "address": "山形県米沢市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "水圧ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "カーポート矢野目",
+        "address": "福島県福島市南矢野目（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車、モコモコ泡洗車あり。"
+    },
+    {
+        "name": "洗車天国",
+        "address": "福島県郡山市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車機あり。"
+    }
+]

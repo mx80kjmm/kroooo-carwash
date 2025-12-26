@@ -1,0 +1,77 @@
+[
+    {
+        "name": "洗車のジャバ 朝日町浜街道店",
+        "address": "香川県高松市朝日町（詳細要確認）",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "https://java-style.com/",
+        "x_post_url": "",
+        "notes": "24時間営業。ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "ヤマウチセルフ多肥",
+        "address": "香川県高松市多肥上町（詳細要確認）",
+        "hours": "要確認",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "2025年6月よりノーブラシ洗車導入。"
+    },
+    {
+        "name": "Whitepit 松山余戸西店",
+        "address": "愛媛県松山市余戸西（詳細要確認）",
+        "hours": "24時間",
+        "equipment": {
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "時間制",
+        "url": "https://whitepit.jp/",
+        "x_post_url": "https://twitter.com/FujitakaCorp",
+        "notes": "2025年オープンの時間制セルフ洗車場。設備充実。"
+    },
+    {
+        "name": "高知屋内洗車場 ウォッシングガレージ",
+        "address": "高知県高知市（詳細要確認）",
+        "hours": "予約制",
+        "equipment": {
+            "high_pressure_washer": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "屋内・冷暖房・純水完備の予約制ガレージ。"
+    },
+    {
+        "name": "松岡自動車 コイン洗車場",
+        "address": "徳島県徳島市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "ボディドライヤーあり。"
+    },
+    {
+        "name": "セルフ洗車場 あらいぐーま",
+        "address": "徳島県徳島市（詳細要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "超高圧ジェットシステム搭載機あり。"
+    }
+]

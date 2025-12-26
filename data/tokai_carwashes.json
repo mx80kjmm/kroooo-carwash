@@ -1,0 +1,126 @@
+[
+    {
+        "name": "WASH GARAGE 南区内田橋店",
+        "address": "愛知県名古屋市南区内田橋",
+        "hours": "予約制",
+        "equipment": {
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "要確認",
+        "url": "",
+        "x_post_url": "",
+        "notes": "2024年12月オープン。完全予約制ガレージ、純水器完備、手ぶら洗車可能。"
+    },
+    {
+        "name": "名古屋城プライベートセルフ洗車場（名城公園北）",
+        "address": "愛知県名古屋市北区（詳細住所要予約）",
+        "hours": "予約制",
+        "equipment": {
+            "high_pressure_washer": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "要確認",
+        "url": "https://coubic.com/private-car-wash",
+        "x_post_url": "",
+        "notes": "予約制ガレージ型セルフ洗車場。純水器完備。"
+    },
+    {
+        "name": "洗神（アラジン）洗車場",
+        "address": "愛知県額田郡幸田町（詳細住所要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "2024年2月オープン。ノーブラシ門型洗車機あり。"
+    },
+    {
+        "name": "JAVA 藤枝築地店",
+        "address": "静岡県藤枝市築地1-6-16",
+        "hours": "5:00 - 23:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "1,000円〜",
+        "url": "https://java-style.com/shop/fujiedatsukiji/",
+        "x_post_url": "",
+        "notes": "ノーブラシ洗車機あり。"
+    },
+    {
+        "name": "超純水洗車アライグマ",
+        "address": "静岡県富士市（詳細住所要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "https://araiguma-carwash.com/",
+        "x_post_url": "",
+        "notes": "ゲート式超純水ノンブラシ洗車機。"
+    },
+    {
+        "name": "シャワーBOY 渡瀬店",
+        "address": "静岡県浜松市中央区渡瀬町",
+        "hours": "7:00 - 21:00",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "x_post_url": "",
+        "notes": "泡ムース手洗いコース（手洗い時間8分付き）あり。"
+    },
+    {
+        "name": "Kireine野洲店（参考：滋賀県ですが東海圏からもアクセス可）",
+        "address": "滋賀県野洲市市三宅2456",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "https://wash-kireine.jp/",
+        "x_post_url": "",
+        "notes": "東海エリアからも比較的近い本格ノンブラシ洗車場。"
+    },
+    {
+        "name": "のんびりパーク",
+        "address": "岐阜県郡上市八幡町（詳細住所要確認）",
+        "hours": "不明",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "https://nonbiripark.com/",
+        "x_post_url": "",
+        "notes": "100%純水使用の高圧スプレー洗車。"
+    },
+    {
+        "name": "ピカピカラボ",
+        "address": "三重県伊勢市（詳細住所要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "https://max-pro.jp/",
+        "x_post_url": "",
+        "notes": "超純水洗車機（ノンブラシかは要確認だが高機能）。"
+    },
+    {
+        "name": "Whitepit 南区東海通店",
+        "address": "愛知県名古屋市南区（詳細住所要確認）",
+        "hours": "時間制",
+        "equipment": {
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "https://jikansei-sensya.jp/",
+        "x_post_url": "https://twitter.com/FujitakaCorp",
+        "notes": "時間制セルフ洗車。冬は温水あり。"
+    }
+]

@@ -1,0 +1,127 @@
+[
+    {
+        "name": "洗車のジャバ 2号線大蔵谷店",
+        "address": "兵庫県明石市大蔵八幡町6-43",
+        "hours": "6:00 - 22:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "1,000円〜 (ノーブラシ)",
+        "url": "https://java-style.com/shop/okuradani/",
+        "notes": "ノーブラシ洗車機2台。スタッフ駐在なし。"
+    },
+    {
+        "name": "洗車のジャバ 尼崎下坂部店",
+        "address": "兵庫県尼崎市下坂部3-21",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "1,000円〜 (ノーブラシ)",
+        "url": "https://java-style.com/shop/amagasaki/",
+        "notes": "ノーブラシ洗車機2台、スプレー2台。温水蛇口あり。"
+    },
+    {
+        "name": "洗車のジャバ 伊丹荒牧店",
+        "address": "兵庫県伊丹市荒牧南3-3-10",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "1,000円〜 (ノーブラシ)",
+        "url": "https://java-style.com/shop/itami/",
+        "notes": "ノーブラシ洗車機3台。"
+    },
+    {
+        "name": "洗車のジャバ 神戸西店",
+        "address": "兵庫県神戸市西区玉津町新方462-1",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "1,000円〜",
+        "url": "https://java-style.com/shop/kobenishi/",
+        "notes": "広い敷地に門型4台。"
+    },
+    {
+        "name": "洗車のジャバ 神戸玉津インター店",
+        "address": "兵庫県神戸市西区平野町福中219-2",
+        "hours": "5:00 - 24:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "1,000円〜",
+        "url": "https://java-style.com/shop/kobetamatsu/",
+        "notes": "ノーブラシ洗車機あり。"
+    },
+    {
+        "name": "プライベート洗車Box 須磨・長田店",
+        "address": "神戸市長田区海運町3-6-6",
+        "hours": "6:00 - 24:00",
+        "equipment": {
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "3,980円 (2時間・個室)",
+        "url": "https://tearaisennsya.net/",
+        "notes": "完全個室予約制。純水器、フォームガン使い放題。"
+    },
+    {
+        "name": "プライベート洗車Box 東灘店",
+        "address": "兵庫県神戸市東灘区青木5丁目17-6",
+        "hours": "8:00 - 22:00",
+        "equipment": {
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "3,980円 (2時間・個室)",
+        "url": "https://tearaisennsya.net/",
+        "notes": "完全個室予約制。"
+    },
+    {
+        "name": "ニシキタ洗車場",
+        "address": "兵庫県西宮市両度町1-20",
+        "hours": "6:00 - 22:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノーブラシ洗車機あり。西宮北口近く。"
+    },
+    {
+        "name": "Whitepit 尼崎玉江橋店",
+        "address": "兵庫県尼崎市東難波町5-31",
+        "hours": "24時間",
+        "equipment": {
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "30分 800円〜",
+        "url": "https://whitepit.jp/",
+        "notes": "時間制セルフ洗車場。高圧洗浄機、純水器など設備充実。"
+    },
+    {
+        "name": "洗車公園せいしん",
+        "address": "兵庫県神戸市西区平野町山の谷358-36",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true,
+            "high_pressure_washer": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "関西最大級、広大な敷地。"
+    }
+]

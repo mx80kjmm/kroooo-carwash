@@ -1,0 +1,117 @@
+[
+    {
+        "name": "I-Wash Park 洗車ビレッジ 春日山",
+        "address": "新潟県上越市春日山町2-4-19",
+        "hours": "7:00 - 22:00",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車機あり。"
+    },
+    {
+        "name": "スーパーウォッシュ東新潟",
+        "address": "新潟県新潟市東区（詳細住所要確認）",
+        "hours": "要確認",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "https://hayama-superwash.net/",
+        "notes": "門型洗車機でノンブラシモード選択可能。"
+    },
+    {
+        "name": "CarWash APPLE",
+        "address": "長野県長野市篠ノ井布施五明339",
+        "hours": "6:00 - 21:00",
+        "equipment": {
+            "high_pressure_washer": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "高圧スプレー4台。ノンブラシ手洗いに適した広々空間。"
+    },
+    {
+        "name": "飯田アクセル松尾洗車場",
+        "address": "長野県飯田市松尾（詳細住所要確認）",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノンブラシ洗車機設置。"
+    },
+    {
+        "name": "シャワーストリートSP（コインランドリーBOX和戸）",
+        "address": "山梨県甲府市国玉町974-1",
+        "hours": "24時間",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "700円〜",
+        "url": "",
+        "notes": "甲府市でノンブラシ洗車機設置の代表店。"
+    },
+    {
+        "name": "セルフ八田SS",
+        "address": "山梨県南アルプス市（詳細住所要確認）",
+        "hours": "不明",
+        "equipment": {
+            "car_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "山梨県初、純水洗車機導入店。"
+    },
+    {
+        "name": "松村物産 カーロ桜田店",
+        "address": "石川県金沢市桜田町2-13",
+        "hours": "8:00 - 20:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "vacuum_cleaner": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "不明",
+        "url": "https://makkuru.jp/",
+        "notes": "2種類のノンブラシ洗車機あり。屋根付き拭き上げ場。"
+    },
+    {
+        "name": "松村物産 カーロ泉野店",
+        "address": "石川県金沢市泉野出町2-1-1",
+        "hours": "8:00 - 20:00",
+        "equipment": {
+            "non_brush_washing_machine": true,
+            "vacuum_cleaner": true
+        },
+        "price_estimated": "不明",
+        "url": "https://makkuru.jp/",
+        "notes": "強力なノンブラシ洗車機設置。"
+    },
+    {
+        "name": "CARWASHDEPOT 野々市市矢作店",
+        "address": "石川県野々市市矢作",
+        "hours": "不明",
+        "equipment": {
+            "non_brush_washing_machine": true
+        },
+        "price_estimated": "不明",
+        "url": "",
+        "notes": "ノーブラシ門型自動洗車機2台のみの専門店。"
+    },
+    {
+        "name": "D-Wash 富山黒瀬",
+        "address": "富山県富山市黒瀬北町2-14-15",
+        "hours": "24時間",
+        "equipment": {
+            "high_pressure_washer": true,
+            "roofed_spray_area": true
+        },
+        "price_estimated": "不明",
+        "url": "https://dh-parking.co.jp/",
+        "notes": "2025年オープン予定（または済）。純水洗車場、屋根付きブース。"
+    }
+]

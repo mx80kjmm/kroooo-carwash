@@ -1,0 +1,125 @@
+[
+  {
+    "name": "洗車のジャバ 京橋店",
+    "address": "大阪府大阪市都島区片町2-3-2",
+    "hours": "5:00 - 24:00",
+    "equipment": {
+      "non_brush_washing_machine": true,
+      "high_pressure_washer": true,
+      "vacuum_cleaner": true,
+      "mat_cleaner": true
+    },
+    "price_estimated": "1,200円 - 1,600円 (ノーブラシ)",
+    "url": "https://java-style.com/shop/kyobashi/",
+    "notes": "ノーブラシ洗車機3台、スプレー洗車機2台。定額洗車サービスあり。"
+  },
+  {
+    "name": "洗車のジャバ 住之江店",
+    "address": "大阪市住之江区平林南2-4-63",
+    "hours": "5:00 - 24:00",
+    "equipment": {
+      "non_brush_washing_machine": true,
+      "high_pressure_washer": true,
+      "vacuum_cleaner": true
+    },
+    "price_estimated": "1,000円 - 1,400円 (ノーブラシ)",
+    "url": "https://java-style.com/shop/suminoe/",
+    "notes": "ノーブラシ洗車機3台、スプレー洗車機2台。広くて作業しやすい。"
+  },
+  {
+    "name": "洗車のジャバ 東大阪店",
+    "address": "大阪府東大阪市鷹殿町21-36",
+    "hours": "5:00 - 24:00",
+    "equipment": {
+      "non_brush_washing_machine": true,
+      "vacuum_cleaner": true
+    },
+    "price_estimated": "1,000円 - 1,400円 (ノーブラシ)",
+    "url": "https://java-style.com/shop/higashiosaka/",
+    "notes": "ノーブラシ洗車機あり。"
+  },
+  {
+    "name": "洗車のジャバ 東大阪西堤店",
+    "address": "大阪府東大阪市西堤本通西1-8-30",
+    "hours": "5:00 - 24:00",
+    "equipment": {
+      "non_brush_washing_machine": true,
+      "vacuum_cleaner": true
+    },
+    "price_estimated": "1,000円 - 1,400円 (ノーブラシ)",
+    "url": "https://java-style.com/shop/higashiosaka-nishizutsumi/",
+    "notes": "最新鋭ノーブラシ洗車機。"
+  },
+  {
+    "name": "CarWash Shinomiya CafeGarden (カーウォッシュ シノミヤ カフェガーデン)",
+    "address": "大阪府門真市四宮6-2-32",
+    "hours": "6:00 - 22:00",
+    "equipment": {
+      "non_brush_washing_machine": true,
+      "vacuum_cleaner": true
+    },
+    "price_estimated": "不明",
+    "url": "http://www.shibatakosan.co.jp/",
+    "notes": "ノーブラシ洗車機3台。カフェ併設。"
+  },
+  {
+    "name": "ウォッシュザウルス新大阪",
+    "address": "大阪府大阪市淀川区宮原2-1",
+    "hours": "24時間",
+    "equipment": {
+      "car_washing_machine": true,
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "notes": "24時間営業。洗車機2台。"
+  },
+  {
+    "name": "セルフウォッシュ富士",
+    "address": "大阪府大阪市此花区酉島5-6-26",
+    "hours": "不明",
+    "equipment": {
+      "car_washing_machine": true,
+      "high_pressure_washer": true,
+      "roofed_spray_area": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "notes": "門型2台、屋根付きスプレー1台。"
+  },
+  {
+    "name": "カーピカランド東八田",
+    "address": "大阪府堺市中区東八田225",
+    "hours": "24時間",
+    "equipment": {
+      "car_washing_machine": true,
+      "high_pressure_washer": true
+    },
+    "price_estimated": "100円〜",
+    "url": "",
+    "notes": "24時間営業。"
+  },
+  {
+    "name": "SELWASH大和川",
+    "address": "大阪市平野区瓜破1-7-16",
+    "hours": "不明",
+    "equipment": {
+      "car_washing_machine": true,
+      "high_pressure_washer": true
+    },
+    "price_estimated": "不明",
+    "url": "",
+    "notes": "門型2台、スプレー3台。"
+  },
+  {
+    "name": "カーピカランドK2",
+    "address": "大阪府大阪市平野区喜連西5-3",
+    "hours": "9:00 - 19:00",
+    "equipment": {
+      "high_pressure_washer": true
+    },
+    "price_estimated": "400円〜",
+    "url": "",
+    "notes": "手洗いスプレー洗車専門。"
+  }
+]
