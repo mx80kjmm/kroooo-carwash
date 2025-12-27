@@ -13,6 +13,10 @@ export default function Footer() {
                             全国のコイン洗車場・セルフ洗車場を検索できるデータベースサイトです。
                             ノンブラシ洗車機や高圧洗浄機など、こだわりの設備条件で絞り込み検索が可能です。
                         </p>
+                        <div className="text-sm text-gray-500 space-y-1">
+                            <p>運営者: kroooo</p>
+                            <p>お問い合わせ: <a href="mailto:contact@kroooo.com" className="text-cyan-400 hover:underline">contact@kroooo.com</a></p>
+                        </div>
                     </div>
                 </div>
 

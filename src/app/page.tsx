@@ -8,6 +8,7 @@ import { CarwashLocation } from '@/types/carwash';
 import CarWashMap from '@/components/CarWashMapWrapper';
 import AddSpotButton from '@/components/AddSpotButton';
 import FavoriteButton from '@/components/FavoriteButton';
+import { NEWS } from '@/data/news';
 
 export default function Home() {
   const [locations, setLocations] = useState<CarwashLocation[]>([]);
@@ -201,6 +202,26 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 pb-8">
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-white/20">
           {!loading && locations.length > 0 && <CarWashMap locations={locations} center={[35.0116, 135.7681]} zoom={8} />}
+        </div>
+      </section>
+
+      {/* お知らせエリア */}
+      <section className="max-w-7xl mx-auto px-4 pb-8">
+        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+          <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            📢 お知らせ
+          </h2>
+          <div className="space-y-3">
+            {NEWS.slice(0, 3).map((item, index) => (
+              <div key={index} className="flex items-start gap-3 text-sm">
+                <span className="text-cyan-300 whitespace-nowrap">{item.date}</span>
+                <span className="text-white/90">
+                  {item.isNew && <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded mr-2">NEW</span>}
+                  {item.content}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
