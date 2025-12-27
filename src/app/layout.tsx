@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "google-site-verification-code", // TODO: Google Search Console で取得
+    google: "WVJVWZS8thYwzlenA2gjpTQ4xRXYKScfauOjB4p6P0k",
   },
 };
 
