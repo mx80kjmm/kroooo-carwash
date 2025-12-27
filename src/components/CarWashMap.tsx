@@ -17,7 +17,7 @@ const fixLeafletIcon = () => {
 };
 
 interface Location {
-    id: string;
+    id: string | number;
     name: string;
     latitude: number;
     longitude: number;
