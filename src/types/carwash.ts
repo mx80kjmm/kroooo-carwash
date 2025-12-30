@@ -18,6 +18,10 @@ export interface CarwashLocation {
     notes?: string;              // 備考
     url?: string;                // 公式URL
     x_post_url?: string;         // X(Twitter) URL
+    description?: string;        // AI Generated Description
+    google_place_id?: string;
+    google_rating?: number;
+    google_user_ratings_total?: number;
     created_at: string;
     updated_at: string;
 }

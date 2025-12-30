@@ -1,9 +1,7 @@
 
 'use client'
 
-import { useState } from 'react';
-// @ts-ignore
-import { useFormState } from 'react-dom';
+import { useState, useActionState } from 'react';
 import { submitReportAction } from '@/app/actions/submit-report';
 
 interface ReportModalProps {
@@ -19,8 +17,9 @@ const initialState = {
 };
 
 export default function ReportModal({ locationId, isOpen, onClose, locationName }: ReportModalProps) {
-    const [state, formAction] = useFormState(submitReportAction, initialState);
-    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [state, formAction, isPending] = useActionState(submitReportAction, initialState);
+    // const [isSubmitting, setIsSubmitting] = useState(false); // useActionState provides pending state
+
 
     if (!isOpen) return null;
 
@@ -67,10 +66,7 @@ export default function ReportModal({ locationId, isOpen, onClose, locationName 
                     </p>
                 )}
 
-                <form action={(formData) => {
-                    setIsSubmitting(true);
-                    formAction(formData);
-                }}>
+                <form action={formAction}>
                     {locationId && <input type="hidden" name="location_id" value={locationId} />}
 
                     <div className="mb-4">
@@ -123,16 +119,16 @@ export default function ReportModal({ locationId, isOpen, onClose, locationName 
                             type="button"
                             onClick={onClose}
                             className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded"
-                            disabled={isSubmitting}
+                            disabled={isPending}
                         >
                             キャンセル
                         </button>
                         <button
                             type="submit"
                             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50"
-                            disabled={isSubmitting}
+                            disabled={isPending}
                         >
-                            {isSubmitting ? '送信中...' : '送信する'}
+                            {isPending ? '送信中...' : '送信する'}
                         </button>
                     </div>
                 </form>

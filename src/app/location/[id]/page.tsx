@@ -107,7 +107,37 @@ export default async function LocationDetail({ params }: Props) {
                                     <span>{location.price_range}</span>
                                 </p>
                             )}
+                            {location.google_rating && (
+                                <p className="text-white/90 flex items-start gap-3">
+                                    <span className="text-cyan-400 w-20 shrink-0">Google評価</span>
+                                    <span className="flex items-center gap-2 flex-wrap">
+                                        <span className="text-yellow-400 font-bold text-lg">★ {location.google_rating}</span>
+                                        <span className="text-white/60 text-sm">({location.google_user_ratings_total}件のクチコミ)</span>
+                                        {location.google_place_id && (
+                                            <a
+                                                href={`https://search.google.com/local/reviews?placeid=${location.google_place_id}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-xs px-2 py-1 bg-white/10 hover:bg-white/20 rounded text-cyan-300 transition-colors"
+                                            >
+                                                クチコミを見る
+                                            </a>
+                                        )}
+                                    </span>
+                                </p>
+                            )}
                         </div>
+                        {/* 紹介文 */}
+                        {location.description && (
+                            <div className="mb-8 p-6 bg-blue-900/40 rounded-xl border border-blue-400/30">
+                                <h3 className="text-lg font-bold text-yellow-300 mb-3 flex items-center gap-2">
+                                    🤖 AIロボットの紹介
+                                </h3>
+                                <p className="text-white/90 leading-relaxed whitespace-pre-wrap">
+                                    {location.description}
+                                </p>
+                            </div>
+                        )}
 
 
                         <div className="mt-4 pt-4 border-t border-white/10">
@@ -195,7 +225,10 @@ export default async function LocationDetail({ params }: Props) {
                     {/* Google Map リンク */}
                     <section>
                         <a
-                            href={`https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`}
+                            href={location.google_place_id
+                                ? `https://www.google.com/maps/search/?api=1&query=Google&query_place_id=${location.google_place_id}`
+                                : `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`
+                            }
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl hover:from-cyan-400 hover:to-blue-400 transition-all shadow-lg"

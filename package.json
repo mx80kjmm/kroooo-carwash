@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "create-admin": "ts-node scripts/create_admin_user.ts"
+    "create-admin": "ts-node scripts/create_admin_user.ts",
+    "generate:desc": "ts-node scripts/generate_descriptions.ts",
+    "fetch:places": "ts-node scripts/fetch_place_ids.ts"
   },
   "dependencies": {
     "@next/third-parties": "^16.1.1",
