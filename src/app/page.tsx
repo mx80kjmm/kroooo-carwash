@@ -8,6 +8,7 @@ import { CarwashLocation } from '@/types/carwash';
 import CarWashMap from '@/components/CarWashMapWrapper';
 import AddSpotButton from '@/components/AddSpotButton';
 import FavoriteButton from '@/components/FavoriteButton';
+import PrefectureList from '@/components/PrefectureList';
 import { NEWS } from '@/data/news';
 
 export default function Home() {
@@ -203,6 +204,11 @@ export default function Home() {
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-white/20">
           {!loading && locations.length > 0 && <CarWashMap locations={locations} center={[35.0116, 135.7681]} zoom={8} />}
         </div>
+      </section>
+
+      {/* 都道府県リンク */}
+      <section className="max-w-7xl mx-auto px-4 pb-8">
+        <PrefectureList />
       </section>
 
       {/* お知らせエリア */}

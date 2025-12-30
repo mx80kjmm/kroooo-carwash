@@ -1,5 +1,6 @@
 
 import { createClient } from '@/lib/supabase/server'
+import { verifyAdminUser } from '@/lib/admin-auth'
 import { redirect } from 'next/navigation'
 import Link from 'next/link'
 import AdminLogoutButton from './logout-button'
@@ -9,16 +10,7 @@ export default async function AdminLayout({
 }: {
     children: React.ReactNode
 }) {
-    const supabase = await createClient()
-
-    const {
-        data: { user },
-    } = await supabase.auth.getUser()
-
-    // Although middleware protects this, double check in layout is safe
-    if (!user) {
-        redirect('/admin/login')
-    }
+    const user = await verifyAdminUser()
 
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900">

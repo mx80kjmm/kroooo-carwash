@@ -45,18 +45,18 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-white mb-4">3. 広告配信について</h2>
               <p>
-                当サイトでは、第三者配信の広告サービス（Google AdSense等）を利用しています。
-                広告配信事業者は、ユーザーの興味に応じた広告を表示するためにCookieを使用することがあります。
+                当サイトでは、第三者配信の広告サービス（Google AdSenseを含む）を利用しています。
+                このような広告配信事業者は、ユーザーの興味に応じた商品やサービスの広告を表示するため、当サイトや他サイトへのアクセスに関する情報 『Cookie』（氏名、住所、メール アドレス、電話番号は含まれません）を使用することがあります。
               </p>
               <p className="mt-2">
-                Cookieを無効にする方法や詳細については、
+                またGoogleアドセンスに関して、このプロセスの詳細やこのような情報が広告配信事業者に使用されないようにする方法については、
                 <a
-                  href="https://policies.google.com/technologies/ads"
+                  href="https://policies.google.com/technologies/ads?hl=ja"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cyan-300 hover:underline"
                 >
-                  広告 - ポリシーと規約 - Google
+                  Googleのポリシーと規約
                 </a>
                 をご覧ください。
               </p>

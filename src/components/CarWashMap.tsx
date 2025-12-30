@@ -1,7 +1,7 @@
 
 'use client';
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { useEffect } from 'react';
@@ -15,6 +15,28 @@ const fixLeafletIcon = () => {
         shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
     });
 };
+
+function MapUpdater({ locations }: { locations: Location[] }) {
+    const map = useMap();
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            map.invalidateSize();
+            if (locations.length > 0) {
+                if (locations.length === 1) {
+                    const loc = locations[0];
+                    map.setView([loc.latitude, loc.longitude], 15);
+                } else {
+                    const bounds = L.latLngBounds(locations.map(l => [l.latitude, l.longitude]));
+                    map.fitBounds(bounds, { padding: [50, 50] });
+                }
+            } else {
+                // Default view if no locations
+            }
+        }, 100); // 100ms delay to ensure container is ready
+        return () => clearTimeout(timer);
+    }, [map, locations]);
+    return null;
+}
 
 interface Location {
     id: string | number;
@@ -47,6 +69,7 @@ export default function CarWashMap({ locations, center = [35.6812, 139.7671], zo
 
     return (
         <MapContainer center={activeCenter} zoom={activeZoom} style={{ height: height, width: '100%', borderRadius: '12px', zIndex: 0 }}>
+            <MapUpdater locations={locations} />
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -55,7 +78,9 @@ export default function CarWashMap({ locations, center = [35.6812, 139.7671], zo
                 <Marker key={loc.id} position={[loc.latitude, loc.longitude]}>
                     <Popup>
                         <div className="p-1">
-                            <h3 className="font-bold text-sm mb-1">{loc.name}</h3>
+                            <h3 className="font-bold text-sm mb-1">
+                                {loc.name.replace(/\(無名\)/g, '').replace(/（無名）/g, '').replace(/ユーザー指摘による追加/g, '').trim()}
+                            </h3>
                             <p className="text-xs mb-2 text-gray-600">{loc.address}</p>
                             <a
                                 href={`/location/${loc.id}`}

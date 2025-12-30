@@ -24,10 +24,15 @@ if (!supabaseUrl || !supabaseServiceKey || !googleMapsApiKey) {
 
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-async function fetchPlaceId(name: string, address: string) {
+async function fetchPlaceId(name: string, address: string, latitude?: number, longitude?: number) {
     // 住所と名前で検索（住所を先にすることで精度向上を期待）
     const query = `${address} ${name}`;
-    const url = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${encodeURIComponent(query)}&key=${googleMapsApiKey}&language=ja`;
+    let url = `https://maps.googleapis.com/maps/api/place/textsearch/json?query=${encodeURIComponent(query)}&key=${googleMapsApiKey}&language=ja`;
+
+    if (latitude && longitude) {
+        url += `&location=${latitude},${longitude}&radius=50`;
+        console.log(`Using location bias: ${latitude}, ${longitude}`);
+    }
 
     try {
         const response = await fetch(url);
@@ -60,7 +65,7 @@ async function main() {
     // google_place_id が未設定のレコードを取得
     const { data: locations, error } = await supabase
         .from('carwash_locations')
-        .select('id, name, address')
+        .select('id, name, address, latitude, longitude')
         .is('google_place_id', null);
 
     if (error) {
@@ -80,7 +85,7 @@ async function main() {
 
     for (const location of locations) {
         console.log(`Processing [${successCount + failureCount + 1}/${locations.length}]: ${location.name}...`);
-        const placeData = await fetchPlaceId(location.name, location.address);
+        const placeData = await fetchPlaceId(location.name, location.address, location.latitude, location.longitude);
 
         if (placeData) {
             const { error: updateError } = await supabase

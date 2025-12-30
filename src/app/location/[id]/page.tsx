@@ -12,6 +12,19 @@ interface Props {
     params: Promise<{ id: string }>;
 }
 
+// Generate Static Params for all locations (SSG)
+export async function generateStaticParams() {
+    const { data: locations } = await supabase
+        .from('carwash_locations')
+        .select('id');
+
+    return locations?.map((loc) => ({
+        id: loc.id,
+    })) || [];
+}
+
+export const revalidate = 3600; // Revalidate every hour
+
 async function getLocation(id: string): Promise<CarwashLocation | null> {
     const { data, error } = await supabase
         .from('carwash_locations')
@@ -30,6 +43,22 @@ export default async function LocationDetail({ params }: Props) {
     if (!location) {
         notFound();
     }
+
+    // 内部管理用の文言を削除するフィルター
+    const cleanText = (text: string | undefined): string => {
+        if (!text) return '';
+        return text
+            .replace(/\(無名\)/g, '')
+            .replace(/（無名）/g, '')
+            .replace(/ユーザー指摘による追加/g, '')
+            .replace(/※/g, '')
+            .trim();
+    }
+
+    // 表示用にテキストを整形
+    location.name = cleanText(location.name);
+    location.notes = cleanText(location.notes);
+    location.description = cleanText(location.description);
 
     const jsonLd = {
         '@context': 'https://schema.org',
@@ -60,6 +89,9 @@ export default async function LocationDetail({ params }: Props) {
             {/* ヘッダー */}
             <header className="bg-black/20 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-4 py-6">
+                    <Link href="/" className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-2 block w-fit">
+                        Kroooo
+                    </Link>
                     <Link
                         href="/"
                         className="text-cyan-300 hover:text-white transition-colors flex items-center gap-2"
@@ -161,35 +193,35 @@ export default async function LocationDetail({ params }: Props) {
                             🛠️ 設備・サービス
                         </h2>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                            <div className={`p-4 rounded-xl border ${location.has_non_brush ? 'bg-gradient-to-r from-yellow-400/20 to-orange-400/20 border-yellow-400/50' : 'bg-white/5 border-white/10'}`}>
-                                <p className={`font-bold ${location.has_non_brush ? 'text-yellow-300' : 'text-white/40'}`}>
+                            <div className={`p-4 rounded-xl border ${location.has_non_brush ? 'bg-gradient-to-r from-yellow-400/20 to-orange-400/20 border-yellow-400/50' : 'bg-gray-800/30 border-white/5 opacity-50'}`}>
+                                <p className={`font-bold ${location.has_non_brush ? 'text-yellow-300' : 'text-gray-400 line-through'}`}>
                                     ✨ ノンブラシ
                                 </p>
-                                <p className="text-sm text-white/60 mt-1">コーティング車対応</p>
+                                <p className="text-sm text-white/40 mt-1">{location.has_non_brush ? 'コーティング車対応' : '非対応'}</p>
                             </div>
-                            <div className={`p-4 rounded-xl border ${location.has_self_wash ? 'bg-cyan-500/20 border-cyan-400/50' : 'bg-white/5 border-white/10'}`}>
-                                <p className={`font-bold ${location.has_self_wash ? 'text-cyan-300' : 'text-white/40'}`}>
+                            <div className={`p-4 rounded-xl border ${location.has_self_wash ? 'bg-cyan-500/20 border-cyan-400/50' : 'bg-gray-800/30 border-white/5 opacity-50'}`}>
+                                <p className={`font-bold ${location.has_self_wash ? 'text-cyan-300' : 'text-gray-400 line-through'}`}>
                                     🚿 セルフ洗車
                                 </p>
-                                <p className="text-sm text-white/60 mt-1">高圧洗浄機</p>
+                                <p className="text-sm text-white/40 mt-1">{location.has_self_wash ? '高圧洗浄機' : '非対応'}</p>
                             </div>
-                            <div className={`p-4 rounded-xl border ${location.has_auto_wash ? 'bg-blue-500/20 border-blue-400/50' : 'bg-white/5 border-white/10'}`}>
-                                <p className={`font-bold ${location.has_auto_wash ? 'text-blue-300' : 'text-white/40'}`}>
+                            <div className={`p-4 rounded-xl border ${location.has_auto_wash ? 'bg-blue-500/20 border-blue-400/50' : 'bg-gray-800/30 border-white/5 opacity-50'}`}>
+                                <p className={`font-bold ${location.has_auto_wash ? 'text-blue-300' : 'text-gray-400 line-through'}`}>
                                     🤖 自動洗車機
                                 </p>
-                                <p className="text-sm text-white/60 mt-1">門型洗車機</p>
+                                <p className="text-sm text-white/40 mt-1">{location.has_auto_wash ? '門型洗車機' : '非対応'}</p>
                             </div>
-                            <div className={`p-4 rounded-xl border ${location.has_vacuum ? 'bg-purple-500/20 border-purple-400/50' : 'bg-white/5 border-white/10'}`}>
-                                <p className={`font-bold ${location.has_vacuum ? 'text-purple-300' : 'text-white/40'}`}>
+                            <div className={`p-4 rounded-xl border ${location.has_vacuum ? 'bg-purple-500/20 border-purple-400/50' : 'bg-gray-800/30 border-white/5 opacity-50'}`}>
+                                <p className={`font-bold ${location.has_vacuum ? 'text-purple-300' : 'text-gray-400 line-through'}`}>
                                     🧹 掃除機
                                 </p>
-                                <p className="text-sm text-white/60 mt-1">車内清掃用</p>
+                                <p className="text-sm text-white/40 mt-1">{location.has_vacuum ? '車内清掃用' : '非対応'}</p>
                             </div>
-                            <div className={`p-4 rounded-xl border ${location.has_mat_wash ? 'bg-green-500/20 border-green-400/50' : 'bg-white/5 border-white/10'}`}>
-                                <p className={`font-bold ${location.has_mat_wash ? 'text-green-300' : 'text-white/40'}`}>
+                            <div className={`p-4 rounded-xl border ${location.has_mat_wash ? 'bg-green-500/20 border-green-400/50' : 'bg-gray-800/30 border-white/5 opacity-50'}`}>
+                                <p className={`font-bold ${location.has_mat_wash ? 'text-green-300' : 'text-gray-400 line-through'}`}>
                                     🧽 マット洗い
                                 </p>
-                                <p className="text-sm text-white/60 mt-1">フロアマット</p>
+                                <p className="text-sm text-white/40 mt-1">{location.has_mat_wash ? 'フロアマット' : '非対応'}</p>
                             </div>
                         </div>
                     </section>

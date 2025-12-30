@@ -40,7 +40,7 @@ export default function Footer() {
                         <Link href="/favorites" className="hover:text-white font-bold text-yellow-500">❤️ お気に入り</Link>
                         <Link href="/articles" className="hover:text-white">📝 洗車コラム</Link>
                         <Link href="/privacy" className="hover:text-white">プライバシーポリシー</Link>
-                        {/* <Link href="/terms" className="hover:text-white">利用規約</Link> */}
+                        <Link href="/terms" className="hover:text-white">利用規約</Link>
                     </div>
                     <p>&copy; {new Date().getFullYear()} kroooo.com All rights reserved.</p>
                 </div>

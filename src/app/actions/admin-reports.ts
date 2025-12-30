@@ -4,7 +4,10 @@
 import { supabaseAdmin } from '@/lib/supabase-admin';
 import { revalidatePath } from 'next/cache';
 
+import { verifyAdminUser } from '@/lib/admin-auth';
+
 export async function fetchPendingReports() {
+    await verifyAdminUser();
     const { data, error } = await supabaseAdmin
         .from('location_reports')
         .select(`
@@ -22,6 +25,7 @@ export async function fetchPendingReports() {
 }
 
 export async function approveReport(reportId: string) {
+    await verifyAdminUser();
     // 1. Get the report
     const { data: report, error: fetchError } = await supabaseAdmin
         .from('location_reports')
@@ -70,6 +74,7 @@ export async function approveReport(reportId: string) {
 }
 
 export async function rejectReport(reportId: string) {
+    await verifyAdminUser();
     const { error } = await supabaseAdmin
         .from('location_reports')
         .update({ status: 'rejected' })

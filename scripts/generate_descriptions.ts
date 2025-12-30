@@ -40,10 +40,10 @@ async function generateDescriptions() {
     let count = 0;
 
     for (const loc of locations) {
-        // 既にdescriptionがある場合はスキップ (強制上書きしたい場合はここを調整)
-        if (loc.description && loc.description.length > 10) {
-            continue;
-        }
+        // 既にdescriptionがある場合でも、口コミを反映するために強制更新 (コメントアウト)
+        // if (loc.description && loc.description.length > 10) {
+        //     continue;
+        // }
 
         const description = generateText(loc);
 
@@ -75,6 +75,21 @@ function generateText(loc: any): string {
         `噂の洗車場、「${loc.name}」を紹介するぜ！場所は${extractCity(loc.address)}だ。`,
     ];
     parts.push(getRandom(intros));
+
+    // ★★★ 口コミの反映 (New) ★★★
+    if (loc.google_reviews && Array.isArray(loc.google_reviews) && loc.google_reviews.length > 0) {
+        // 星4以上の口コミをフィルタリング
+        const goodReviews = loc.google_reviews.filter((r: any) => r.rating >= 4 && r.text && r.text.length > 10);
+
+        if (goodReviews.length > 0) {
+            // ランダムに1つ選ぶ
+            const review = getRandomArray(goodReviews);
+            // 要約風に引用（長すぎる場合はカット）
+            const text = review.text.length > 80 ? review.text.substring(0, 80) + '...' : review.text;
+
+            parts.push(`利用者からは「${text}」なんて声も上がっているみたいだぜ。（星${review.rating}評価）`);
+        }
+    }
 
     // 設備の特徴
     const features = [];
@@ -119,6 +134,10 @@ function extractCity(address: string): string {
     // 簡易的な住所抽出 (埼玉県さいたま市... -> さいたま市)
     const match = address.match(/(?:都|道|府|県)(.+?[市区郡])/);
     return match ? match[1] : 'この街';
+}
+
+function getRandomArray(arr: any[]): any {
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
 function getRandom(arr: string[]): string {

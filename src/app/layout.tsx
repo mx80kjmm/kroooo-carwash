@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google';
+import GoogleAdSense from "@/components/GoogleAdSense";
 import StructuredData from "./components/StructuredData";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -56,6 +57,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "WVJVWZS8thYwzlenA2gjpTQ4xRXYKScfauOjB4p6P0k",
+    other: {
+      "google-adsense-account": process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID || "",
+    },
   },
 };
 
@@ -76,6 +80,9 @@ export default function RootLayout({
         <Footer />
       </body>
       <GoogleAnalytics gaId="G-TEP74YDNS4" />
+      {process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID && (
+        <GoogleAdSense publisherId={process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID} />
+      )}
     </html>
   );
 }
