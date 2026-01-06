@@ -127,10 +127,11 @@ export default async function LocationDetail({ params }: Props) {
                                     </a>
                                 </p>
                             )}
+
                             {location.business_hours && (
                                 <p className="text-white/90 flex items-start gap-3">
                                     <span className="text-cyan-400 w-20 shrink-0">営業時間</span>
-                                    <span>{location.business_hours}</span>
+                                    <span className="whitespace-pre-wrap leading-relaxed">{location.business_hours}</span>
                                 </p>
                             )}
                             {location.price_range && (
