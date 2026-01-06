@@ -6,10 +6,16 @@ export interface NewsItem {
 }
 
 export const NEWS: NewsItem[] = [
+
+    {
+        date: '2026-01-07',
+        content: '🙇 データ修正中：現在、住所情報の誤りを順次修正しています。ご不便をおかけして申し訳ありません！',
+        isNew: true
+    },
     {
         date: '2025-12-31',
         content: '🎉 サイトをリニューアル！地図機能の強化・修正を行いました。',
-        isNew: true
+        isNew: false
     },
     {
         date: '2025-12-31',
