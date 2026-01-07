@@ -133,6 +133,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* お知らせエリア */}
+      <section className="max-w-7xl mx-auto px-4 pb-4">
+        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
+          <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+            📢 お知らせ
+          </h2>
+          <div className="space-y-3">
+            {NEWS.slice(0, 3).map((item, index) => (
+              <div key={index} className="flex items-start gap-3 text-sm">
+                <span className="text-cyan-300 whitespace-nowrap">{item.date}</span>
+                <span className="text-white/90">
+                  {item.isNew && <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded mr-2">NEW</span>}
+                  {item.content}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 検索エリア */}
       <section className="max-w-7xl mx-auto px-4 py-8">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl">
@@ -211,26 +231,6 @@ export default function Home() {
         <PrefectureList />
       </section>
 
-      {/* お知らせエリア */}
-      <section className="max-w-7xl mx-auto px-4 pb-8">
-        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-          <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-            📢 お知らせ
-          </h2>
-          <div className="space-y-3">
-            {NEWS.slice(0, 3).map((item, index) => (
-              <div key={index} className="flex items-start gap-3 text-sm">
-                <span className="text-cyan-300 whitespace-nowrap">{item.date}</span>
-                <span className="text-white/90">
-                  {item.isNew && <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded mr-2">NEW</span>}
-                  {item.content}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* 結果エリア */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         {loading ? (
@@ -273,6 +273,14 @@ export default function Home() {
                   <p className="text-cyan-50 mb-4 text-sm flex items-center gap-2 pointer-events-none">
                     <span>📍</span> {location.address}
                   </p>
+
+                  {location.google_rating && (
+                    <div className="mb-3 flex items-center gap-2 pointer-events-none">
+                      <span className="text-yellow-400 font-bold">★ {location.google_rating}</span>
+                      <span className="text-white/60 text-xs">({location.google_user_ratings_total}件)</span>
+                    </div>
+                  )}
+
                   <div className="flex flex-wrap gap-2 pointer-events-none">
                     {location.has_non_brush && (
                       <span className="px-3 py-1 bg-yellow-400/20 text-yellow-300 border border-yellow-400/30 rounded-full text-xs font-bold">

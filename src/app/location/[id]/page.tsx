@@ -7,6 +7,7 @@ import ReportModal from '@/components/ReportModal';
 import FavoriteButton from '@/components/FavoriteButton';
 import CarWashMap from '@/components/CarWashMapWrapper';
 import ReportButton from '@/components/ReportButton';
+import WeatherWidget from '@/components/WeatherWidget';
 
 interface Props {
     params: Promise<{ id: string }>;
@@ -185,6 +186,17 @@ export default async function LocationDetail({ params }: Props) {
                         </h2>
                         <div className="bg-white rounded-xl overflow-hidden border-2 border-white/20 h-[400px]">
                             <CarWashMap locations={[location]} height="400px" />
+                        </div>
+                    </section>
+
+                    {/* 天気予報 */}
+                    <section className="mb-8">
+                        <div className="bg-white/95 rounded-xl p-6 border-2 border-white/20">
+                            <WeatherWidget
+                                latitude={location.latitude}
+                                longitude={location.longitude}
+                                locationName={location.name}
+                            />
                         </div>
                     </section>
 

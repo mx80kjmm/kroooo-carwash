@@ -4,6 +4,7 @@ import { createClient } from '@/utils/supabase/client';
 import { getPrefecture, PREFECTURES } from '@/lib/prefectures';
 import CarWashMap from '@/components/CarWashMapWrapper';
 import Link from 'next/link';
+import WeatherWidget from '@/components/WeatherWidget';
 
 // Static Params Generation (SSG)
 export function generateStaticParams() {
@@ -112,6 +113,17 @@ export default async function PrefecturePage({ params }: { params: Promise<{ pre
                     )}
                 </div>
 
+                {/* Weather Widget */}
+                {locations && locations.length > 0 && (
+                    <div className="bg-white rounded-xl shadow-xl p-6 mb-12 border border-gray-200">
+                        <WeatherWidget
+                            latitude={locations[0].latitude}
+                            longitude={locations[0].longitude}
+                            locationName={pref.name}
+                        />
+                    </div>
+                )}
+
                 {/* List */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {locations?.map((loc) => (
@@ -123,6 +135,14 @@ export default async function PrefecturePage({ params }: { params: Promise<{ pre
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-800 mb-2">{loc.name}</h3>
                                 <p className="text-sm text-gray-500 mb-4">{loc.address}</p>
+
+                                {loc.google_rating && (
+                                    <div className="mb-3 flex items-center gap-2">
+                                        <span className="text-yellow-500 font-bold">★ {loc.google_rating}</span>
+                                        <span className="text-gray-500 text-xs">({loc.google_user_ratings_total}件)</span>
+                                    </div>
+                                )}
+
                                 <div className="flex flex-wrap gap-2">
                                     {loc.has_non_brush && (
                                         <span className="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full font-bold">
