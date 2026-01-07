@@ -48,8 +48,25 @@ export default function Home() {
         });
         setSortByDistance(true);
       },
-      () => {
-        alert('位置情報の取得に失敗しました');
+      (error) => {
+        let errorMessage = '位置情報の取得に失敗しました';
+        switch (error.code) {
+          case 1: // PERMISSION_DENIED
+            errorMessage = '位置情報の利用が拒否されました。\n端末やブラウザの設定で位置情報の利用を許可してください。';
+            break;
+          case 2: // POSITION_UNAVAILABLE
+            errorMessage = '現在位置を特定できませんでした。\n電波の良い場所で再度お試しください。';
+            break;
+          case 3: // TIMEOUT
+            errorMessage = '位置情報の取得に時間がかかりすぎました。\nもう一度お試しください。';
+            break;
+        }
+        alert(errorMessage);
+      },
+      {
+        enableHighAccuracy: true, // 高精度な位置情報を要求
+        timeout: 10000,           // 10秒でタイムアウト
+        maximumAge: 0             // キャッシュを使用しない
       }
     );
   };
