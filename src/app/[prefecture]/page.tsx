@@ -122,6 +122,12 @@ export default async function PrefecturePage({ params }: { params: Promise<{ pre
                         >
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-800 mb-2">{loc.name}</h3>
+                                {loc.google_rating && (
+                                    <div className="flex items-center gap-2 mb-3">
+                                        <span className="text-yellow-500 font-bold text-sm">★ {loc.google_rating}</span>
+                                        <span className="text-gray-500 text-xs">({loc.google_user_ratings_total})</span>
+                                    </div>
+                                )}
                                 <p className="text-sm text-gray-500 mb-4">{loc.address}</p>
                                 <div className="flex flex-wrap gap-2">
                                     {loc.has_non_brush && (

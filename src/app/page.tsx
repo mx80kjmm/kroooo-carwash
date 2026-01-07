@@ -133,6 +133,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Mobile News Section (Visible only on mobile) */}
+      <section className="max-w-7xl mx-auto px-4 -mt-8 mb-8 relative z-20 md:hidden">
+        <div className="bg-white/10 backdrop-blur rounded-xl p-4">
+          <h2 className="text-md font-bold text-white mb-2 flex items-center gap-2">
+            📢 お知らせ
+          </h2>
+          <div className="space-y-2">
+            {NEWS.slice(0, 2).map((item, index) => (
+              <div key={index} className="flex items-start gap-2 text-xs">
+                <span className="text-cyan-300 whitespace-nowrap">{item.date}</span>
+                <span className="text-white/90">
+                  {item.isNew && <span className="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded mr-1">NEW</span>}
+                  {item.content}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 検索エリア */}
       <section className="max-w-7xl mx-auto px-4 py-8">
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl">
@@ -211,8 +231,8 @@ export default function Home() {
         <PrefectureList />
       </section>
 
-      {/* お知らせエリア */}
-      <section className="max-w-7xl mx-auto px-4 pb-8">
+      {/* お知らせエリア (Hidden on mobile, visible on desktop) */}
+      <section className="max-w-7xl mx-auto px-4 pb-8 hidden md:block">
         <div className="bg-white/10 backdrop-blur rounded-xl p-6">
           <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
             📢 お知らせ
@@ -270,6 +290,13 @@ export default function Home() {
                     </div>
                   </div>
 
+                  {location.google_rating && (
+                    <div className="flex items-center gap-2 mb-3 pointer-events-none">
+                      <span className="text-yellow-400 font-bold text-sm">★ {location.google_rating}</span>
+                      <span className="text-white/60 text-xs">({location.google_user_ratings_total})</span>
+                    </div>
+                  )}
+
                   <p className="text-cyan-50 mb-4 text-sm flex items-center gap-2 pointer-events-none">
                     <span>📍</span> {location.address}
                   </p>
@@ -299,7 +326,7 @@ export default function Home() {
                   {location.business_hours && (
                     <p className="text-white/60 mt-3 text-sm flex items-center gap-2">
                       <span>🕐</span>
-                      <span>{location.business_hours}</span>
+                      <span className="line-clamp-1">{location.business_hours.split('\n')[0]}</span>
                     </p>
                   )}
                 </div>
