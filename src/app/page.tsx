@@ -134,7 +134,8 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700">
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4 relative overflow-hidden">
-        <div className="absolute top-4 right-4 z-20">
+        <div className="absolute top-4 right-4 z-20 flex gap-2">
+          <AddSpotButton />
           <Link href="/favorites" className="flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-white hover:bg-white/30 transition">
             ❤️ お気に入り
           </Link>
@@ -143,15 +144,12 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-6 drop-shadow-2xl">
             Kroooo
           </h1>
-          <p className="text-cyan-200 mt-2">kroooo.com - 洗車場を探そう</p>
-          <div className="mt-6 flex justify-center md:justify-start">
-            <AddSpotButton />
-          </div>
+          <p className="text-cyan-200 mt-2 font-medium">このサイトはセルフ洗車場を愛する人たちにお届けします。<br className="md:hidden" />洗車難民を救いたい。</p>
         </div>
       </section>
 
-      {/* Mobile News Section (Visible only on mobile) */}
-      <section className="max-w-7xl mx-auto px-4 -mt-8 mb-8 relative z-20 md:hidden">
+      {/* News Section (Visible on all devices, positioned to overlap Hero) */}
+      <section className="max-w-7xl mx-auto px-4 -mt-8 mb-8 relative z-20">
         <div className="bg-white/10 backdrop-blur rounded-xl p-4">
           <h2 className="text-md font-bold text-white mb-2 flex items-center gap-2">
             📢 お知らせ
@@ -248,25 +246,7 @@ export default function Home() {
         <PrefectureList />
       </section>
 
-      {/* お知らせエリア (Hidden on mobile, visible on desktop) */}
-      <section className="max-w-7xl mx-auto px-4 pb-8 hidden md:block">
-        <div className="bg-white/10 backdrop-blur rounded-xl p-6">
-          <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-            📢 お知らせ
-          </h2>
-          <div className="space-y-3">
-            {NEWS.slice(0, 3).map((item, index) => (
-              <div key={index} className="flex items-start gap-3 text-sm">
-                <span className="text-cyan-300 whitespace-nowrap">{item.date}</span>
-                <span className="text-white/90">
-                  {item.isNew && <span className="bg-red-500 text-white text-xs px-2 py-0.5 rounded mr-2">NEW</span>}
-                  {item.content}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 結果エリア */}
       <section className="max-w-7xl mx-auto px-4 pb-16">

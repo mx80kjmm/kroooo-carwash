@@ -42,3 +42,9 @@ next-env.d.ts
 
 .vercel
 .env*.local
+
+/self-car-cleaning-fc945012f3ff.json
+
+# remotion
+/remotion-video
+/output
