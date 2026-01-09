@@ -10,6 +10,10 @@ import AddSpotButton from '@/components/AddSpotButton';
 import FavoriteButton from '@/components/FavoriteButton';
 import PrefectureList from '@/components/PrefectureList';
 import { NEWS } from '@/data/news';
+import JapanMap from '@/components/JapanMap';
+import Sidebar from '@/components/Sidebar';
+
+
 
 export default function Home() {
   const [locations, setLocations] = useState<CarwashLocation[]>([]);
@@ -123,6 +127,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchLocations();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filterNonBrush, filter24h, filterUnlimitedWater, sortByDistance, userLocation]);
 
   const handleSearch = (e: React.FormEvent) => {
@@ -131,224 +136,199 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-700">
-      {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 relative overflow-hidden">
-        <div className="absolute top-4 right-4 z-20 flex gap-2">
-          <AddSpotButton />
-          <Link href="/favorites" className="flex items-center gap-2 bg-white/20 backdrop-blur px-4 py-2 rounded-full text-white hover:bg-white/30 transition">
-            ❤️ お気に入り
-          </Link>
-        </div>
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 mb-6 drop-shadow-2xl">
+    <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
+      {/* Header / Hero Section (Slimmer) */}
+      <header className="bg-gradient-to-r from-blue-900 to-cyan-800 text-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+          <Link href="/" className="text-2xl font-bold tracking-tight hover:text-cyan-200 transition">
             Kroooo
-          </h1>
-          <p className="text-cyan-200 mt-2 font-medium">このサイトはセルフ洗車場を愛する人たちにお届けします。<br className="md:hidden" />洗車難民を救いたい。</p>
-        </div>
-      </section>
-
-      {/* News Section (Visible on all devices, positioned to overlap Hero) */}
-      <section className="max-w-7xl mx-auto px-4 -mt-8 mb-8 relative z-20">
-        <div className="bg-white/10 backdrop-blur rounded-xl p-4">
-          <h2 className="text-md font-bold text-white mb-2 flex items-center gap-2">
-            📢 お知らせ
-          </h2>
-          <div className="space-y-2">
-            {NEWS.slice(0, 2).map((item, index) => (
-              <div key={index} className="flex items-start gap-2 text-xs">
-                <span className="text-cyan-300 whitespace-nowrap">{item.date}</span>
-                <span className="text-white/90">
-                  {item.isNew && <span className="bg-red-500 text-white text-[10px] px-1.5 py-0.5 rounded mr-1">NEW</span>}
-                  {item.content}
-                </span>
-              </div>
-            ))}
+          </Link>
+          <div className="flex gap-3 text-sm">
+            <AddSpotButton />
+            <Link href="/favorites" className="flex items-center gap-1 bg-white/20 px-3 py-1.5 rounded-full hover:bg-white/30 transition">
+              ❤️ <span className="hidden sm:inline">お気に入り</span>
+            </Link>
           </div>
         </div>
-      </section>
+      </header>
 
-      {/* 検索エリア */}
-      <section className="max-w-7xl mx-auto px-4 py-8">
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl">
-          <form onSubmit={handleSearch} className="flex flex-col md:flex-row gap-4">
-            <input
-              type="text"
-              placeholder="地名・施設名で検索..."
-              value={searchKeyword}
-              onChange={(e) => setSearchKeyword(e.target.value)}
-              className="flex-1 px-6 py-4 rounded-xl bg-white/90 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-cyan-400/50 text-lg"
-            />
-            <button
-              type="button"
-              onClick={handleNearMe}
-              className={`px-6 py-4 rounded-xl font-bold flex items-center gap-2 transition-all shadow-lg ${sortByDistance ? 'bg-green-500 text-white' : 'bg-white/90 text-gray-700 hover:bg-white'
-                }`}
-            >
-              📍 現在地から近い順
-            </button>
-            <button
-              type="submit"
-              className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl hover:from-cyan-400 hover:to-blue-400 transition-all shadow-lg hover:shadow-cyan-500/30"
-            >
-              🔍 検索
-            </button>
-          </form>
+      {/* Main Content Area */}
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        <div className="flex flex-col lg:flex-row gap-8">
 
-          {/* フィルター */}
-          <div className="mt-4 flex flex-wrap gap-4">
-            <label className="flex items-center gap-2 text-white cursor-pointer group bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">
-              <input
-                type="checkbox"
-                checked={filterNonBrush}
-                onChange={(e) => setFilterNonBrush(e.target.checked)}
-                className="w-5 h-5 rounded accent-cyan-500"
-              />
-              <span className="group-hover:text-cyan-300 transition-colors">
-                ✨ ノンブラシ
-              </span>
-            </label>
-            <label className="flex items-center gap-2 text-white cursor-pointer group bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">
-              <input
-                type="checkbox"
-                checked={filter24h}
-                onChange={(e) => setFilter24h(e.target.checked)}
-                className="w-5 h-5 rounded accent-cyan-500"
-              />
-              <span className="group-hover:text-cyan-300 transition-colors">
-                🌙 24時間営業
-              </span>
-            </label>
-            <label className="flex items-center gap-2 text-white cursor-pointer group bg-white/10 px-4 py-2 rounded-full hover:bg-white/20 transition">
-              <input
-                type="checkbox"
-                checked={filterUnlimitedWater}
-                onChange={(e) => setFilterUnlimitedWater(e.target.checked)}
-                className="w-5 h-5 rounded accent-cyan-500"
-              />
-              <span className="group-hover:text-cyan-300 transition-colors">
-                💧 水道使い放題
-              </span>
-            </label>
-          </div>
-        </div>
-      </section>
+          {/* Main Column (Left) */}
+          <div className="flex-1 space-y-8">
 
-      {/* マップエリア */}
-      <section className="max-w-7xl mx-auto px-4 pb-8">
-        <div className="bg-white rounded-xl shadow-2xl overflow-hidden border-4 border-white/20">
-          {!loading && locations.length > 0 && <CarWashMap locations={locations} center={[35.0116, 135.7681]} zoom={8} />}
-        </div>
-      </section>
+            {/* Hero Copy & News */}
+            <section className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
+              <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
+                洗車難民を救いたい。
+              </h1>
+              <p className="text-gray-600 mb-6">
+                このサイトはセルフ洗車場を愛する人たちにお届けします。全国のコイン洗車場を網羅的に検索できます。
+              </p>
 
-      {/* 都道府県リンク */}
-      <section className="max-w-7xl mx-auto px-4 pb-8">
-        <PrefectureList />
-      </section>
-
-
-
-      {/* 結果エリア */}
-      <section className="max-w-7xl mx-auto px-4 pb-16">
-        {loading ? (
-          <div className="flex justify-center items-center py-20">
-            <div className="animate-spin rounded-full h-16 w-16 border-4 border-cyan-400 border-t-transparent"></div>
-          </div>
-        ) : error ? (
-          <div className="bg-red-500/20 backdrop-blur rounded-xl p-6 text-white text-center">
-            <p className="text-xl">⚠️ {error}</p>
-            <p className="mt-2 text-white/70">Supabase との接続を確認してください</p>
-          </div>
-        ) : locations.length === 0 ? (
-          <div className="bg-white/10 backdrop-blur rounded-xl p-12 text-center">
-            <p className="text-4xl mb-4">🔍</p>
-            <p className="text-white text-xl">洗車場が見つかりませんでした</p>
-            <p className="text-white/60 mt-2">検索条件を変更してお試しください</p>
-          </div>
-        ) : (
-          <>
-            <p className="text-cyan-200 mb-4">
-              {locations.length} 件の洗車場が見つかりました
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {locations.map((location) => (
-                <div
-                  key={location.id}
-                  className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all hover:scale-[1.02] hover:shadow-2xl group relative"
-                >
-                  <Link href={`/location/${location.id}`} className="absolute inset-0 z-0"></Link>
-
-                  <div className="flex justify-between items-start mb-2 relative z-10 pointer-events-none">
-                    <h3 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors pointer-events-auto">
-                      {location.name}
-                    </h3>
-                    <div className="pointer-events-auto">
-                      <FavoriteButton locationId={location.id} className="bg-white shadow-sm" />
+              {/* News Ticker Style */}
+              <div className="bg-blue-50 rounded-lg p-3 flex flex-col sm:flex-row gap-2 text-sm text-blue-900">
+                <span className="font-bold flex-shrink-0">📢 お知らせ:</span>
+                <div className="flex-1 space-y-1">
+                  {NEWS.slice(0, 3).map((item, index) => (
+                    <div key={index} className="flex gap-2 items-center">
+                      <span className="text-blue-500 text-xs font-mono">{item.date}</span>
+                      <span className="line-clamp-1">{item.content}</span>
+                      {item.isNew && <span className="bg-red-500 text-white text-[10px] px-1.5 rounded-full">NEW</span>}
                     </div>
-                  </div>
-
-                  {location.google_rating && (
-                    <div className="flex items-center gap-2 mb-3 pointer-events-none">
-                      <span className="text-yellow-400 font-bold text-sm">★ {location.google_rating}</span>
-                      <span className="text-white/60 text-xs">({location.google_user_ratings_total})</span>
-                    </div>
-                  )}
-
-                  <p className="text-cyan-50 mb-4 text-sm flex items-center gap-2 pointer-events-none">
-                    <span>📍</span> {location.address}
-                  </p>
-                  <div className="flex flex-wrap gap-2 pointer-events-none">
-                    {location.has_non_brush && (
-                      <span className="px-3 py-1 bg-yellow-400/20 text-yellow-300 border border-yellow-400/30 rounded-full text-xs font-bold">
-                        ✨ ノンブラシ
-                      </span>
-                    )}
-                    {location.has_self_wash && (
-                      <span className="px-3 py-1 bg-indigo-500/30 text-indigo-300 border border-indigo-400/30 rounded-full text-xs">
-                        💦 セルフ
-                      </span>
-                    )}
-                    {location.has_auto_wash && (
-                      <span className="px-3 py-1 bg-purple-500/30 text-purple-300 border border-purple-400/30 rounded-full text-xs">
-                        🤖 全自動
-                      </span>
-                    )}
-                    {location.has_vacuum && (
-                      <span className="px-3 py-1 bg-purple-500/30 text-purple-200 text-xs rounded-full border border-purple-400/30">
-                        掃除機
-                      </span>
-                    )}
-                  </div>
-
-                  {location.business_hours && (
-                    <p className="text-white/60 mt-3 text-sm flex items-center gap-2">
-                      <span>🕐</span>
-                      <span className="line-clamp-1">{location.business_hours.split('\n')[0]}</span>
-                    </p>
-                  )}
+                  ))}
                 </div>
-              ))}
-            </div>
-          </>
-        )}
-      </section>
+              </div>
+            </section>
 
-      {/* フッター */}
-      <footer className="bg-black/30 backdrop-blur-md border-t border-white/10 py-8">
+            {/* Interactive Japan Map */}
+            <section>
+              <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                🗺️ マップから探す
+              </h2>
+              <div className="h-[400px] md:h-[500px] w-full">
+                <JapanMap className="h-full w-full" />
+              </div>
+            </section>
+
+            {/* Search Results */}
+            <section id="results">
+              <div className="flex justify-between items-end mb-4">
+                <h2 className="text-xl font-bold text-gray-800 flex items-center gap-2">
+                  🚙 洗車場一覧
+                </h2>
+                {!loading && (
+                  <span className="text-sm text-gray-500">
+                    {locations.length} 件
+                  </span>
+                )}
+              </div>
+
+              {loading ? (
+                <div className="flex justify-center items-center py-20 bg-white rounded-xl shadow-sm">
+                  <div className="animate-spin rounded-full h-12 w-12 border-4 border-cyan-500 border-t-transparent"></div>
+                </div>
+              ) : error ? (
+                <div className="bg-red-50 text-red-600 p-4 rounded-xl text-center border border-red-100">
+                  <p>⚠️ {error}</p>
+                </div>
+              ) : locations.length === 0 ? (
+                <div className="bg-white p-12 text-center rounded-xl shadow-sm border border-gray-100">
+                  <p className="text-4xl mb-4">😢</p>
+                  <p className="text-gray-600">条件に一致する洗車場が見つかりませんでした</p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {locations.map((location) => (
+                    <div
+                      key={location.id}
+                      className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:shadow-md transition-all hover:border-cyan-200 group relative"
+                    >
+                      <Link href={`/location/${location.id}`} className="absolute inset-0 z-0"></Link>
+
+                      <div className="flex justify-between items-start mb-2 relative z-10 pointer-events-none">
+                        <h3 className="text-lg font-bold text-gray-800 group-hover:text-cyan-600 transition-colors pointer-events-auto line-clamp-1">
+                          {location.name}
+                        </h3>
+                        <div className="pointer-events-auto flex-shrink-0 ml-2">
+                          <FavoriteButton locationId={location.id} className="bg-gray-50 shadow-sm hover:bg-red-50" />
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-2 mb-3 text-sm">
+                        {location.google_rating ? (
+                          <>
+                            <span className="text-yellow-500 font-bold">★ {location.google_rating}</span>
+                            <span className="text-gray-400 text-xs">({location.google_user_ratings_total})</span>
+                          </>
+                        ) : (
+                          <span className="text-gray-400 text-xs">評価なし</span>
+                        )}
+                      </div>
+
+                      <p className="text-gray-500 mb-4 text-xs flex items-center gap-1 pointer-events-none line-clamp-1">
+                        <span>📍</span> {location.address}
+                      </p>
+
+                      <div className="flex flex-wrap gap-1.5 pointer-events-none">
+                        {location.has_non_brush && (
+                          <span className="px-2 py-0.5 bg-yellow-100 text-yellow-700 border border-yellow-200 rounded text-[10px] font-bold">
+                            ノンブラシ
+                          </span>
+                        )}
+                        {location.has_self_wash && (
+                          <span className="px-2 py-0.5 bg-blue-100 text-blue-700 border border-blue-200 rounded text-[10px]">
+                            セルフ
+                          </span>
+                        )}
+                        {location.is_24h && (
+                          <span className="px-2 py-0.5 bg-purple-100 text-purple-700 border border-purple-200 rounded text-[10px]">
+                            24h
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+
+            {/* Prefecture List (Bottom) */}
+            <section className="pt-8 border-t border-gray-200">
+              <h3 className="text-lg font-bold text-gray-700 mb-4">都道府県から探す</h3>
+              <PrefectureList />
+            </section>
+          </div>
+
+          {/* Sidebar Column (Right) - Hidden on mobile initially, or stacked? Requirement said 2-column. */}
+          {/* Using lg:block for desktop, standard flow for mobile (stacked below main content? No, usually stacked ABOVE or BELOW depending on importance.
+              Search is important. Let's keep it in the flow. But typically sidebar is second on mobile.
+              However, for usability, search might need to be accessible. 
+              Let's put Sidebar logic: On mobile, it appears below "Hero" but above "Japan Map" if we reorder, but HTML structure dictates order.
+              Flex-col-reverse on mobile? No, Content first is better for SEO. Sidebar (Search) might be better at top?
+              Let's stick to standard ordering: Main Content then Sidebar on mobile, But Sidebar contains Search. 
+              Wait, user might want to search immediately. 
+              For now, standard layout: Left (Main) + Right (Sidebar). On mobile: Main then Sidebar.
+              Actually, the mock showed "Search Widget" inside Sidebar. If mobile users scroll past map to find search, it's bad.
+              Maybe I'll hide sidebar search on mobile and put a compact search bar in main? 
+              Or just keep it simple: 2 column on desktop, 1 column on mobile.
+          */}
+          <Sidebar
+            searchKeyword={searchKeyword}
+            setSearchKeyword={setSearchKeyword}
+            filterNonBrush={filterNonBrush}
+            setFilterNonBrush={setFilterNonBrush}
+            filter24h={filter24h}
+            setFilter24h={setFilter24h}
+            filterUnlimitedWater={filterUnlimitedWater}
+            setFilterUnlimitedWater={setFilterUnlimitedWater}
+            onSearch={handleSearch}
+            onNearMe={handleNearMe}
+            sortByDistance={sortByDistance}
+            currentLocation={userLocation}
+          />
+
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12 mt-12 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-white/60">
+          <p className="text-gray-500 mb-4">
             © 2025 kroooo.com - 全国コイン洗車場データベース
           </p>
-          <div className="mt-4 space-x-4">
-            <a href="/privacy" className="text-cyan-300 hover:underline text-sm">
+          <div className="flex justify-center gap-6 mb-6">
+            <Link href="/privacy" className="text-gray-400 hover:text-cyan-400 text-sm transition">
               プライバシーポリシー
-            </a>
-            <a href="/contact" className="text-cyan-300 hover:underline text-sm">
+            </Link>
+            <Link href="/contact" className="text-gray-400 hover:text-cyan-400 text-sm transition">
               お問い合わせ
-            </a>
+            </Link>
           </div>
-          <p className="text-white/40 text-sm mt-2">
-            情報の掲載・修正のご依頼はお問い合わせください
+          <p className="text-gray-600 text-xs">
+            情報の掲載・修正のご依頼はお問い合わせフォームよりご連絡ください。
           </p>
         </div>
       </footer>

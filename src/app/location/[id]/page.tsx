@@ -118,7 +118,14 @@ export default async function LocationDetail({ params }: Props) {
                         <div className="space-y-3">
                             <p className="text-white/90 flex items-start gap-3">
                                 <span className="text-cyan-400 w-20 shrink-0">住所</span>
-                                <span>{location.address}</span>
+                                <a
+                                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(location.address)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-cyan-300 transition-colors underline decoration-white/30 hover:decoration-cyan-300"
+                                >
+                                    {location.address}
+                                </a>
                             </p>
                             {location.phone && (
                                 <p className="text-white/90 flex items-start gap-3">
@@ -189,8 +196,21 @@ export default async function LocationDetail({ params }: Props) {
                         <h2 className="text-xl font-bold text-white mb-4 border-b border-white/20 pb-2">
                             🗺️ アクセス
                         </h2>
-                        <div className="bg-white rounded-xl overflow-hidden border-2 border-white/20 h-[400px]">
+                        <div className="bg-white rounded-xl overflow-hidden border-2 border-white/20 h-[400px] mb-4">
                             <CarWashMap locations={[location]} height="400px" />
+                        </div>
+                        <div className="text-center">
+                            <a
+                                href={location.google_place_id
+                                    ? `https://www.google.com/maps/search/?api=1&query=Google&query_place_id=${location.google_place_id}`
+                                    : `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`
+                                }
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl hover:from-cyan-400 hover:to-blue-400 transition-all shadow-lg"
+                            >
+                                🗺️ Google マップで開く
+                            </a>
                         </div>
                     </section>
 
@@ -261,31 +281,17 @@ export default async function LocationDetail({ params }: Props) {
                         </section>
                     )}
 
-                    {/* Google Map リンク */}
-                    <section>
-                        <a
-                            href={location.google_place_id
-                                ? `https://www.google.com/maps/search/?api=1&query=Google&query_place_id=${location.google_place_id}`
-                                : `https://www.google.com/maps/search/?api=1&query=${location.latitude},${location.longitude}`
-                            }
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-xl hover:from-cyan-400 hover:to-blue-400 transition-all shadow-lg"
-                        >
-                            🗺️ Google マップで開く
-                        </a>
-                    </section>
                 </div>
-            </main >
+            </main>
 
             {/* フッター */}
-            < footer className="bg-black/30 backdrop-blur-md border-t border-white/10 py-8 mt-8" >
+            <footer className="bg-black/30 backdrop-blur-md border-t border-white/10 py-8 mt-8">
                 <div className="max-w-7xl mx-auto px-4 text-center">
                     <p className="text-white/60">
                         © 2025 kroooo.com - 全国コイン洗車場データベース
                     </p>
                 </div>
-            </footer >
-        </div >
+            </footer>
+        </div>
     );
 }
