@@ -1,3 +1,43 @@
+-- Source: 20251227_add_filter_columns.sql
+-- 新しいフィルター用カラムを追加
+ALTER TABLE carwash_locations 
+ADD COLUMN IF NOT EXISTS is_24h boolean DEFAULT false,
+ADD COLUMN IF NOT EXISTS has_unlimited_water boolean DEFAULT false;
+
+-- 既存データの更新（business_hoursに「24時間」が含まれていたら is_24h = true にする）
+UPDATE carwash_locations 
+SET is_24h = true 
+WHERE business_hours ILIKE '%24時間%' 
+   OR business_hours ILIKE '%24h%'
+   OR business_hours ILIKE '%終日%';
+
+COMMENT ON COLUMN carwash_locations.is_24h IS '24時間営業かどうか';
+COMMENT ON COLUMN carwash_locations.has_unlimited_water IS '水道使い放題かどうか';
+
+
+-- Source: 20251227_storage_bucket.sql
+
+-- Create Storage Bucket for Report Images
+
+-- 1. Insert into storage.buckets
+insert into storage.buckets (id, name, public)
+values ('report-images', 'report-images', true)
+on conflict (id) do nothing;
+
+-- 2. Policy: Public Insert (既存の場合は削除してから作成)
+drop policy if exists "Allow public uploads" on storage.objects;
+create policy "Allow public uploads"
+on storage.objects for insert
+with check ( bucket_id = 'report-images' );
+
+-- 3. Policy: Public Read (既存の場合は削除してから作成)
+drop policy if exists "Allow public read" on storage.objects;
+create policy "Allow public read"
+on storage.objects for select
+using ( bucket_id = 'report-images' );
+
+
+-- Source: 20251227_user_reporting.sql
 
 -- Migration: User Reporting System (Fixed)
 
@@ -66,3 +106,5 @@ using (auth.role() = 'authenticated' or auth.role() = 'service_role');
 create policy "Allow authenticated update reports"
 on location_reports for update
 using (auth.role() = 'authenticated' or auth.role() = 'service_role');
+
+

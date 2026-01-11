@@ -161,11 +161,11 @@ export default function Home() {
 
             {/* Hero Copy & News */}
             <section className="bg-white rounded-2xl shadow-sm p-6 border border-gray-100">
-              <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3">
-                洗車難民を救いたい。
+              <h1 className="text-xl md:text-2xl font-bold text-gray-800 mb-3">
+                このサイトは洗車難民による洗車難民のための情報サイトです
               </h1>
               <p className="text-gray-600 mb-6">
-                このサイトはセルフ洗車場を愛する人たちにお届けします。全国のコイン洗車場を網羅的に検索できます。
+                全国のコイン洗車場を網羅的に検索できます。
               </p>
 
               {/* News Ticker Style */}
@@ -277,7 +277,6 @@ export default function Home() {
 
             {/* Prefecture List (Bottom) */}
             <section className="pt-8 border-t border-gray-200">
-              <h3 className="text-lg font-bold text-gray-700 mb-4">都道府県から探す</h3>
               <PrefectureList />
             </section>
           </div>

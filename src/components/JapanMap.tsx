@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { PREFECTURES } from "@/lib/prefectures";
 
 const geoUrl = "/data/japan.topojson";
 
@@ -44,14 +45,19 @@ export default function JapanMap({ onPrefectureSelect, className = "" }: JapanMa
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handlePrefectureClick = (geo: any) => {
-        const prefectureName = geo.properties.nam_ja;
+        const prefectureName = geo.properties.nam_ja; // e.g., "東京都"
+
         if (onPrefectureSelect) {
             onPrefectureSelect(prefectureName);
         } else {
-            // Navigate to prefecture page (logic can be adjusted)
-            // router.push(`/${prefectureName}`); 
-            // For now, let's filter by it or just log it.
-            console.log("Clicked:", prefectureName);
+            // Find ID from Japanese name
+            const prefecture = PREFECTURES.find(p => p.name === prefectureName);
+            if (prefecture) {
+                console.log(`Navigating to /${prefecture.id}`);
+                router.push(`/${prefecture.id}`);
+            } else {
+                console.warn("Prefecture not found:", prefectureName);
+            }
         }
     };
 
